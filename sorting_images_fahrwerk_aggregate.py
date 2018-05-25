@@ -4,7 +4,7 @@ import sys
 import json
 
 
-img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\23_may_2018\\AU5715_PVS_GesFzg_20140804173643\\Fahrwerk_Aggregate\\"
+img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU491_PVS_GesFzg_20140923132007\\Fahrwerk_Aggregate"
 
 def run(im,json_old_path,name):
     coords=[]
@@ -44,6 +44,16 @@ def run(im,json_old_path,name):
             elif imgdata_old_to_read_open["Teilez.E1"]=='Aggregate_Fahrwerk' and imgdata_old_to_read_open["Teilez.E2"]=='Abgasanlage' and imgdata_old_to_read_open["Teilez.E3"]=='' and imgdata_old_to_read_open["Teilez.E4"]=='':
                 try:
                     cv2.imwrite('C:\\Users\\pettm\\Desktop\\Script_data\\Fahrwerk_Aggregate\\Abgasanlage\\'+str(name)+'.jpg',im)
+                except:
+                    print("DONE!!!")
+            elif imgdata_old_to_read_open["Teilez.E1"]=='Aggregate_Fahrwerk' and imgdata_old_to_read_open["Teilez.E2"]=='Bremssystem' and imgdata_old_to_read_open["Teilez.E3"]=='' and imgdata_old_to_read_open["Teilez.E4"]=='':
+                try:
+                    cv2.imwrite('C:\\Users\\pettm\\Desktop\\Script_data\\Fahrwerk_Aggregate\\Bremssystem\\'+str(name)+'.jpg',im)
+                except:
+                    print("DONE!!!")
+            elif imgdata_old_to_read_open["Teilez.E1"]=='Aggregate_Fahrwerk' and imgdata_old_to_read_open["Teilez.E2"]=='Getriebe' and imgdata_old_to_read_open["Teilez.E3"]=='' and imgdata_old_to_read_open["Teilez.E4"]=='':
+                try:
+                    cv2.imwrite('C:\\Users\\pettm\\Desktop\\Script_data\\Fahrwerk_Aggregate\\Getriebe\\'+str(name)+'.jpg',im)
                 except:
                     print("DONE!!!")
             # elif imgdata_old_to_read_open["Teilez.E1"]=='Elektrik' and imgdata_old_to_read_open["Teilez.E2"]=='Türen' and imgdata_old_to_read_open["Teilez.E3"]=='' and imgdata_old_to_read_open["Teilez.E4"]=='':

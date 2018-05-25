@@ -29,7 +29,7 @@ I=105
 H=104
 #C:\\Users\\pettm\\Downloads\\Audi_dataset\\14_may_2018\\AU334_PVS_GesFzg_20140721072917\\Elektrik\\Testwoche_04,0\\
 #C:\Users\pettm\Downloads\Audi_dataset\14_may_2018\AU334_PVS_GesFzg_20140721072917\Elektrik\Testwoche_04,0
-img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU736_PVS_GesFzg_20140828142521\\Elektrik\\Testwoche_01,2\\"
+img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\17_may_2018\\AU334_0-Serie_GesFzg_20140721082424\\Fahrwerk_Aggregate\\Testwoche_17,6_label\\"
 
 
 
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 with open (json_path, 'w') as data_destination:
                     #data_to_read_open["coordEndOfSightPoint"]=[coords[0][0],coords[0][1]]
                     json.dump(data_to_read_open,data_destination)
-                    index_basename+=1
+                    index_basename+=2
             except:
                 print("DONE!!!")
         elif key==E:
@@ -156,7 +156,7 @@ if __name__ == "__main__":
                     data_to_read_open['CATEGORY'] = 'EASY'
                 with open (json_new_path, 'w') as data_destination:
                     json.dump(data_to_read_open,data_destination)
-                    index_basename+=1
+                    index_basename+=2
             except:
                 print("DONE!!!")
         elif key==M:
@@ -167,7 +167,7 @@ if __name__ == "__main__":
                     data_to_read_open['CATEGORY'] = 'MEDIUM'
                 with open (json_new_path, 'w') as data_destination:
                     json.dump(data_to_read_open,data_destination)
-                    index_basename+=1
+                    index_basename+=2
             except:
                 print("DONE!!!")
         elif key==H:
@@ -178,7 +178,7 @@ if __name__ == "__main__":
                     data_to_read_open['CATEGORY'] = 'HARD'
                 with open (json_new_path, 'w') as data_destination:
                     json.dump(data_to_read_open,data_destination)
-                    index_basename+=1
+                    index_basename+=2
             except:
                 print("DONE!!!")
         elif key==I:
@@ -189,7 +189,7 @@ if __name__ == "__main__":
                     data_to_read_open['CATEGORY'] = 'IMPOSSIBLE'
                 with open (json_new_path, 'w') as data_destination:
                     json.dump(data_to_read_open,data_destination)
-                    index_basename+=1
+                    index_basename+=2
             except:
                 print("DONE!!!")
         elif key==BCKSPACE:
@@ -200,10 +200,10 @@ if __name__ == "__main__":
                 print("COULD NOT remove: "+json_new_path)
         elif key==RIGHT:
             print("Load new Image WITHOUT saving")
-            index_basename += 1
+            index_basename += 2
         elif key==LEFT:
             print("One Image back WITHOUT saving")
-            index_basename-=1
+            index_basename-=2
         elif key == UP:
             print("One Image back WITHOUT saving")
             index_basename += 20
