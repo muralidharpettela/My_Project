@@ -9,7 +9,7 @@ cate2=list()
 cate3=list()
 cate4=list()
 
-path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU335_0-Serie_GesFzg_20140827105851\\Elektrik"
+path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU736_PVS_GesFzg_20140828142521\\Elektrik"
 
 for root, dirs, files in os.walk(path, topdown=False):
        for index, name in enumerate(files):
