@@ -9,7 +9,7 @@ cate2=list()
 cate3=list()
 cate4=list()
 
-path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU491_PVS_GesFzg_20140923132007\\Fahrwerk_Aggregate"
+path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\AU736_PVS_GesFzg_20140828142521\\Ritzspuren"
 
 for root, dirs, files in os.walk(path, topdown=False):
        for index, name in enumerate(files):
@@ -25,7 +25,7 @@ for root, dirs, files in os.walk(path, topdown=False):
                         cate1.append(cat1)
                         cate2.append(cat2)
                         cate3.append(cat3)
-                        cate4.append(cat4)
+                        cate4.append(cat4)                                                  
                     except:
                         print("That is a corrupted file "+name)
 

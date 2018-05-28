@@ -4,7 +4,7 @@ import sys
 import json
 
 
-img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU491_PVS_GesFzg_20140923132007\\Fahrwerk_Aggregate"
+img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU736_PVS_GesFzg_20140828142521\\Fahrwerk_Aggregate\\"
 
 def run(im,json_old_path,name):
     coords=[]
