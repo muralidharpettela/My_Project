@@ -9,7 +9,7 @@ cate2=list()
 cate3=list()
 cate4=list()
 
-path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\AU736_PVS_GesFzg_20140828142521\\Ritzspuren"
+path= "C:\\Users\\pettm\\Downloads\\Audi_dataset"
 
 for root, dirs, files in os.walk(path, topdown=False):
        for index, name in enumerate(files):
@@ -36,7 +36,7 @@ jsondata=pd.DataFrame(list(zip(cate1, cate2, cate3,cate4)),columns=['Category_1'
 #jsondata.to_csv('out.csv')
 print(jsondata.apply(pd.Series.value_counts))
 exp=jsondata.apply(pd.Series.value_counts)
-exp.to_csv('out.csv', sep=',')
+exp.to_csv('out.csv', sep='\t')
 a=jsondata['Category_1'].count()
 print("The total number of images or json files: ",a)
 
