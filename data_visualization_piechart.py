@@ -37,13 +37,9 @@ page_template = """
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        
-        var options = {
-          title: 'My Daily Activities'
-        };
-
-        chart.draw(jscode_data, options);
+        %(jscode)s
+        var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
+        jscode_table.draw(jscode_data);
       }
     </script>
   </head>
@@ -54,6 +50,7 @@ page_template = """
 """
 
 def main():
+    import math
     import gviz_api
     import os
     import os, json
@@ -66,7 +63,7 @@ def main():
     cate3=list()
     cate4=list()
 
-    path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU335_0-Serie_GesFzg_20140827105851\\Elektrik"
+    path= "C:\\Users\\pettm\\Downloads\\Audi_dataset"
 
     for root, dirs, files in os.walk(path, topdown=False):
        for index, name in enumerate(files):
@@ -76,15 +73,15 @@ def main():
                     try:
                         json_text = json.load(json_file)
                         cat1 = json_text['Teilez.E1']
-                        cat2 = json_text['Teilez.E2']
-                        cat3 = json_text['Teilez.E3']
-                        cat4 = json_text['Teilez.E4']
-                        cate1.append(cat1)
-                        cate2.append(cat2)
-                        cate3.append(cat3)
-                        cate4.append(cat4)    
-                        
-                                                                      
+                        if cat1=='Elektrik':
+                            cat2 = json_text['Teilez.E2']
+                            cat3 = json_text['Teilez.E3']
+                            cat4 = json_text['Teilez.E4']
+                            cate1.append(cat1)
+                            cate2.append(cat2)
+                            cate3.append(cat3)
+                            cate4.append(cat4)    
+                                            
                     except:
                         print("That is a corrupted file "+name)
                         
@@ -122,30 +119,33 @@ def main():
 
 # plt.show()
     description = {"names": ("string", "names"),
-                "category_1": ("number", "category_1"),
-                 "category_2": ("number", "category_2"),
-                 "category_3": ("number", "category_3"),
-                 "category_4": ("number", "category_4"),
-                 }
+                "category_1": ("number", "category_1")}
     #description=[('category_1', 'string'), ('category_2', 'string'), ('category_3', 'string'), ('category_4', 'string')]           
     data=[]
     for row in exp.iterrows():
         row1=row[1].values
-        data.append({"names": row[0],"category_1":row1[0],"category_2":row1[1],"category_3":row1[2],"category_4":row1[3]})
+        cleanedList = [x for x in row1 if (math.isnan(x) != True)]
+        none=len(cleanedList)
+        if none==1:
+            data.append({"names": row[0],"category_1":cleanedList[0]})  
+        
+             
     data_table = gviz_api.DataTable(description)
     data_table.LoadData(data)
     # Creating a JavaScript code string
     jscode = data_table.ToJSCode("jscode_data",
-                               columns_order=("names", "category_1", "category_2","category_3","category_4"),
+                               columns_order=("names", "category_1"),
                                order_by="category_1")
+    #jscode = data_table.ToJSCode("jscode_data",columns_order=("names", "category_1"))
     # Creating a JSon string
-    json = data_table.ToJSon(columns_order=("names", "category_1", "category_2","category_3","category_4"),
-                           order_by="category_1")
+    #json = data_table.ToJSon(columns_order=("names", "category_1"),
+                           #order_by="category_1")
+  
 
     # Putting the JS code and JSon string into the template
-    #with open("Output.txt", "w") as text_file:
-        #print(page_template % vars(),file=text_file)
-    print(page_template % vars())
+    with open("Output1.html", "w") as html:
+        print(page_template % vars(),file=html)
+    #print(page_template % vars())
     
 
 #print(len(cate1))
