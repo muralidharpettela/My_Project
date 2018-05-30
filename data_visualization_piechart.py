@@ -1,33 +1,58 @@
 
 import gviz_api
+# page_template = """
+# <html>
+#   <head>
+#   <title>Static example</title>
+#     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+#     <script>
+#       google.load("visualization", "1", {packages:["table"]});
+
+#       google.setOnLoadCallback(drawTable);
+#       function drawTable() {
+#         %(jscode)s
+#         var jscode_table = new google.visualization.Table(document.getElementById('table_div_jscode'));
+#         jscode_table.draw(jscode_data, {showRowNumber: true});
+
+#         var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
+#         var json_data = new google.visualization.DataTable(%(json)s, 0.5);
+#         json_table.draw(json_data, {showRowNumber: true});
+#       }
+#     </script>
+#   </head>
+#   <body>
+#     <H1>Table created using ToJSCode</H1>
+#     <div id="table_div_jscode"></div>
+#     <H1>Table created using ToJSon</H1>
+#     <div id="table_div_json"></div>
+#   </body>
+# </html>
+# """
 page_template = """
 <html>
   <head>
-  <title>Static example</title>
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script>
-      google.load("visualization", "1", {packages:["table"]});
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-      google.setOnLoadCallback(drawTable);
-      function drawTable() {
-        %(jscode)s
-        var jscode_table = new google.visualization.Table(document.getElementById('table_div_jscode'));
-        jscode_table.draw(jscode_data, {showRowNumber: true});
+      function drawChart() {
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        
+        var options = {
+          title: 'My Daily Activities'
+        };
 
-        var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
-        var json_data = new google.visualization.DataTable(%(json)s, 0.5);
-        json_table.draw(json_data, {showRowNumber: true});
+        chart.draw(jscode_data, options);
       }
     </script>
   </head>
   <body>
-    <H1>Table created using ToJSCode</H1>
-    <div id="table_div_jscode"></div>
-    <H1>Table created using ToJSon</H1>
-    <div id="table_div_json"></div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
 """
+
 def main():
     import gviz_api
     import os
@@ -41,7 +66,7 @@ def main():
     cate3=list()
     cate4=list()
 
-    path= "C:\\Users\\pettm\\Downloads\\Audi_dataset"
+    path= "C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU335_0-Serie_GesFzg_20140827105851\\Elektrik"
 
     for root, dirs, files in os.walk(path, topdown=False):
        for index, name in enumerate(files):
@@ -118,9 +143,9 @@ def main():
                            order_by="category_1")
 
     # Putting the JS code and JSon string into the template
-    with open("Output.txt", "w") as text_file:
-        print(page_template % vars(),file=text_file)
-    
+    #with open("Output.txt", "w") as text_file:
+        #print(page_template % vars(),file=text_file)
+    print(page_template % vars())
     
 
 #print(len(cate1))

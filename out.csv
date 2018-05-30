@@ -1,30 +1,16 @@
-,Category_1,Category_2,Category_3,Category_4
-,,839.0,2225.0,3756.0
-ABS,,,11.0,
-Airbag,,,2.0,
-Anzeigegeräte,,,16.0,
-Assistenzsysteme,,,48.0,
-Außenspiegel,,,114.0,
-Bedienelemente_Lenkrad,,,14.0,
-El_Struktur,,28.0,,
-Elektrik,3793.0,,,
-Fahrwerkselektronik,,29.0,,
-Frontend_Motorraum,,2014.0,,
-Heckleuchten_Bremsleuchte,,,252.0,
-Innenraum,,187.0,,
-Kofferraum_Heckklappe,,499.0,,
-Kühlerlüftermodul,,,13.0,
-LWR,,,,18.0
-Lautsprecher,,,18.0,
-Leitungssatz,,,25.0,
-M-Steuergerät_Halter,,,35.0,
-Niveausensoren,,,18.0,
-Parkassistent,,,2.0,
-Scheinwerfer_Blinker,,,757.0,
-Signalhörner,,,,2.0
-Steuergeräte,,39.0,,
-Türen,,158.0,,
-Wischeranlage,,,178.0,
-Zündspulen_Starter_Generator,,,65.0,
-aussen,,,,8.0
-rechts,,,,9.0
+	Category_1	Category_2	Category_3	Category_4
+	12.0	26.0	141.0	247.0
+Elektrik	235.0			
+Frontend_Motorraum		141.0		
+Heckleuchten_Bremsleuchte			23.0	
+Innenraum		5.0		
+Kofferraum_Heckklappe		50.0		
+Kühlerlüftermodul			2.0	
+Lautsprecher			2.0	
+Leitungssatz			1.0	
+M-Steuergerät_Halter			2.0	
+Scheinwerfer_Blinker			55.0	
+Steuergeräte		20.0		
+Türen		5.0		
+Wischeranlage			14.0	
+Zündspulen_Starter_Generator			7.0	
