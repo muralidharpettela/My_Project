@@ -1,34 +1,56 @@
 
 import gviz_api
+# page_template = """
+# <html>
+#   <head>
+#   <title>Static example</title>
+#     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+#     <script>
+#       google.load("visualization", "1", {packages:["table"]});
+
+#       google.setOnLoadCallback(drawTable);
+#       function drawTable() {
+#         %(jscode)s
+#         var jscode_table = new google.visualization.Table(document.getElementById('table_div_jscode'));
+#         jscode_table.draw(jscode_data, {showRowNumber: true});
+
+#         var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
+#         var json_data = new google.visualization.DataTable(%(json)s, 0.5);
+#         json_table.draw(json_data, {showRowNumber: true});
+#       }
+#     </script>
+#   </head>
+#   <body>
+#     <H1>Table created using ToJSCode</H1>
+#     <div id="table_div_jscode"></div>
+#     <H1>Table created using ToJSon</H1>
+#     <div id="table_div_json"></div>
+#   </body>
+# </html>
+# """
 page_template = """
 <html>
   <head>
-  <title>Static example</title>
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script>
-      google.load("visualization", "1", {packages:["table"]});
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-      google.setOnLoadCallback(drawTable);
-      function drawTable() {
+      function drawChart() {
         %(jscode)s
-        var jscode_table = new google.visualization.Table(document.getElementById('table_div_jscode'));
-        jscode_table.draw(jscode_data, {showRowNumber: true});
-
-        var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
-        var json_data = new google.visualization.DataTable(%(json)s, 0.5);
-        json_table.draw(json_data, {showRowNumber: true});
+        var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
+        jscode_table.draw(jscode_data);
       }
     </script>
   </head>
   <body>
-    <H1>Table created for Karosserie_Rohbau category</H1>
-    <div id="table_div_jscode"></div>
-    <H1>Table created for Karosserie_Rohbau category-another method</H1>
-    <div id="table_div_json"></div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
 """
+
 def main():
+    import math
     import gviz_api
     import os
     import os, json
@@ -51,15 +73,13 @@ def main():
                     try:
                         json_text = json.load(json_file)
                         cat1 = json_text['Teilez.E1']
-                        if cat1=='Karosserie_Rohbau':
-                            cat2 = json_text['Teilez.E2']
-                            cat3 = json_text['Teilez.E3']
-                            cat4 = json_text['Teilez.E4']
-                            cate1.append(cat1)
-                            cate2.append(cat2)
-                            cate3.append(cat3)
-                            cate4.append(cat4)     
-                                         
+                        cat2 = json_text['Teilez.E2']
+                        cat3 = json_text['Teilez.E3']
+                        cat4 = json_text['Teilez.E4']
+                        cate1.append(cat1)
+                        cate2.append(cat2)
+                        cate3.append(cat3)
+                        cate4.append(cat4)                           
                     except:
                         print("That is a corrupted file "+name)
                         
@@ -71,6 +91,9 @@ def main():
     #jsondata.to_csv('out.csv')
     #print(jsondata.apply(pd.Series.value_counts))
     exp=jsondata.apply(pd.Series.value_counts)
+    #exp.drop('Category_2', axis=1)
+    #exp.drop('Category_3', axis=1)
+    #exp.drop('Category_4', axis=1)
     print(exp.dtypes)
 # exp.to_csv('out.csv', sep=',')
 # a=jsondata['Category_1'].count()
@@ -97,30 +120,36 @@ def main():
 
 # plt.show()
     description = {"names": ("string", "names"),
-                "category_1": ("number", "category_1"),
-                 "category_2": ("number", "category_2"),
-                 "category_3": ("number", "category_3"),
-                 "category_4": ("number", "category_4"),
-                 }
+                "category_1": ("number", "category_1")}
     #description=[('category_1', 'string'), ('category_2', 'string'), ('category_3', 'string'), ('category_4', 'string')]           
     data=[]
     for row in exp.iterrows():
         row1=row[1].values
-        data.append({"names": row[0],"category_1":row1[0],"category_2":row1[1],"category_3":row1[2],"category_4":row1[3]})
+        row2=row1[0]
+        if math.isnan(row2) != True:
+            data.append({"names": row[0],"category_1":row2})  
+        #cleanedList = [x for x in row2 if (math.isnan(x) != True)]
+        #none=len(cleanedList)
+        #if none==1:
+            #data.append({"names": row[0],"category_1":row2})  
+        
+             
     data_table = gviz_api.DataTable(description)
     data_table.LoadData(data)
     # Creating a JavaScript code string
-    jscode = data_table.ToJSCode("jscode_data",
-                               columns_order=("names", "category_1", "category_2","category_3","category_4"),
-                               order_by="category_1")
+    # jscode = data_table.ToJSCode("jscode_data",
+    #                            columns_order=("names", "category_1"),
+    #                            order_by="category_1")
+    jscode = data_table.ToJSCode("jscode_data",columns_order=("names", "category_1"))
     # Creating a JSon string
-    json = data_table.ToJSon(columns_order=("names", "category_1", "category_2","category_3","category_4"),
-                           order_by="category_1")
+    #json = data_table.ToJSon(columns_order=("names", "category_1"),
+                           #order_by="category_1")
+  
 
     # Putting the JS code and JSon string into the template
-    with open("Output.html", "w") as html:
+    with open("Output1.html", "w") as html:
         print(page_template % vars(),file=html)
-    
+    #print(page_template % vars())
     
 
 #print(len(cate1))

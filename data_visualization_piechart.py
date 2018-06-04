@@ -73,7 +73,7 @@ def main():
                     try:
                         json_text = json.load(json_file)
                         cat1 = json_text['Teilez.E1']
-                        if cat1=='Elektrik':
+                        if cat1=='Karosserie_Rohbau':
                             cat2 = json_text['Teilez.E2']
                             cat3 = json_text['Teilez.E3']
                             cat4 = json_text['Teilez.E4']
@@ -84,9 +84,7 @@ def main():
                                             
                     except:
                         print("That is a corrupted file "+name)
-                        
-
-                    #jsons_data.loc[index] = [cat1, cat2, cat3,cat4]
+                     #jsons_data.loc[index] = [cat1, cat2, cat3,cat4]
 
     # now that we have the pertinent json data in our DataFrame let's look at it
     jsondata=pd.DataFrame(list(zip(cate1, cate2, cate3,cate4)),columns=['Category_1','Category_2', 'Category_3','Category_4'])

@@ -1,0 +1,152 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var jscode_data = new google.visualization.DataTable();
+jscode_data.addColumn("string", "names", "names");
+jscode_data.addColumn("number", "category_1", "category_1");
+jscode_data.addRows(64);
+jscode_data.setCell(0, 0, "Abschirmbleche");
+jscode_data.setCell(0, 1, 1.0);
+jscode_data.setCell(1, 0, "Querlenker");
+jscode_data.setCell(1, 1, 1.0);
+jscode_data.setCell(2, 0, "Traglenker,-gelenk");
+jscode_data.setCell(2, 1, 1.0);
+jscode_data.setCell(3, 0, "VA_links");
+jscode_data.setCell(3, 1, 1.0);
+jscode_data.setCell(4, 0, "Deckel");
+jscode_data.setCell(4, 1, 2.0);
+jscode_data.setCell(5, 0, "Gelenkwellen_rechts");
+jscode_data.setCell(5, 1, 3.0);
+jscode_data.setCell(6, 0, "Dämpfer_links");
+jscode_data.setCell(6, 1, 4.0);
+jscode_data.setCell(7, 0, "HA_rechts");
+jscode_data.setCell(7, 1, 4.0);
+jscode_data.setCell(8, 0, "Heizung");
+jscode_data.setCell(8, 1, 5.0);
+jscode_data.setCell(9, 0, "VA_rechts");
+jscode_data.setCell(9, 1, 5.0);
+jscode_data.setCell(10, 0, "Flexelemente");
+jscode_data.setCell(10, 1, 6.0);
+jscode_data.setCell(11, 0, "Querlenker_links");
+jscode_data.setCell(11, 1, 6.0);
+jscode_data.setCell(12, 0, "Querlenker_rechts");
+jscode_data.setCell(12, 1, 6.0);
+jscode_data.setCell(13, 0, "Vorne");
+jscode_data.setCell(13, 1, 6.0);
+jscode_data.setCell(14, 0, "Dämpfer");
+jscode_data.setCell(14, 1, 7.0);
+jscode_data.setCell(15, 0, "Dämpfer_rechts");
+jscode_data.setCell(15, 1, 7.0);
+jscode_data.setCell(16, 0, "AKF-Behälter");
+jscode_data.setCell(16, 1, 9.0);
+jscode_data.setCell(17, 0, "Hinten");
+jscode_data.setCell(17, 1, 9.0);
+jscode_data.setCell(18, 0, "Gelenkwellen_links");
+jscode_data.setCell(18, 1, 10.0);
+jscode_data.setCell(19, 0, "Ladeluftkühler_LLK");
+jscode_data.setCell(19, 1, 14.0);
+jscode_data.setCell(20, 0, "Klimakühler");
+jscode_data.setCell(20, 1, 15.0);
+jscode_data.setCell(21, 0, "Kompressor");
+jscode_data.setCell(21, 1, 21.0);
+jscode_data.setCell(22, 0, "Luftfederkompr");
+jscode_data.setCell(22, 1, 25.0);
+jscode_data.setCell(23, 0, "BKV");
+jscode_data.setCell(23, 1, 31.0);
+jscode_data.setCell(24, 0, "Ölwanne");
+jscode_data.setCell(24, 1, 33.0);
+jscode_data.setCell(25, 0, "Halter_Aufhängungen");
+jscode_data.setCell(25, 1, 37.0);
+jscode_data.setCell(26, 0, "Übersichten ZSB");
+jscode_data.setCell(26, 1, 39.0);
+jscode_data.setCell(27, 0, "Oelleitungen");
+jscode_data.setCell(27, 1, 40.0);
+jscode_data.setCell(28, 0, "Schwenklager_Radträger");
+jscode_data.setCell(28, 1, 41.0);
+jscode_data.setCell(29, 0, "Lenksäule");
+jscode_data.setCell(29, 1, 45.0);
+jscode_data.setCell(30, 0, "Leitungen");
+jscode_data.setCell(30, 1, 46.0);
+jscode_data.setCell(31, 0, "Einfüllstutzen");
+jscode_data.setCell(31, 1, 49.0);
+jscode_data.setCell(32, 0, "HA-Differential");
+jscode_data.setCell(32, 1, 79.0);
+jscode_data.setCell(33, 0, "ESP-Aggregat");
+jscode_data.setCell(33, 1, 100.0);
+jscode_data.setCell(34, 0, "Endrohrblenden");
+jscode_data.setCell(34, 1, 116.0);
+jscode_data.setCell(35, 0, "Rohre_Leitungen");
+jscode_data.setCell(35, 1, 119.0);
+jscode_data.setCell(36, 0, "Lenkgetriebe");
+jscode_data.setCell(36, 1, 124.0);
+jscode_data.setCell(37, 0, "Schaltgestänge");
+jscode_data.setCell(37, 1, 127.0);
+jscode_data.setCell(38, 0, "Schwenklager  Radträger");
+jscode_data.setCell(38, 1, 154.0);
+jscode_data.setCell(39, 0, "Kraftstoffleitungen");
+jscode_data.setCell(39, 1, 162.0);
+jscode_data.setCell(40, 0, "Getriebeglocke");
+jscode_data.setCell(40, 1, 163.0);
+jscode_data.setCell(41, 0, "Klimaanlage");
+jscode_data.setCell(41, 1, 175.0);
+jscode_data.setCell(42, 0, "Motorkühlung");
+jscode_data.setCell(42, 1, 197.0);
+jscode_data.setCell(43, 0, "Getriebestütze");
+jscode_data.setCell(43, 1, 231.0);
+jscode_data.setCell(44, 0, "Bremsscheiben");
+jscode_data.setCell(44, 1, 235.0);
+jscode_data.setCell(45, 0, "Bremsleitungen");
+jscode_data.setCell(45, 1, 363.0);
+jscode_data.setCell(46, 0, "Gelenkwellen");
+jscode_data.setCell(46, 1, 379.0);
+jscode_data.setCell(47, 0, "Tank");
+jscode_data.setCell(47, 1, 459.0);
+jscode_data.setCell(48, 0, "Motor");
+jscode_data.setCell(48, 1, 518.0);
+jscode_data.setCell(49, 0, "Achslenker");
+jscode_data.setCell(49, 1, 697.0);
+jscode_data.setCell(50, 0, "Kraftstoffanlage");
+jscode_data.setCell(50, 1, 720.0);
+jscode_data.setCell(51, 0, "HIRA");
+jscode_data.setCell(51, 1, 908.0);
+jscode_data.setCell(52, 0, "Lenkung");
+jscode_data.setCell(52, 1, 919.0);
+jscode_data.setCell(53, 0, "Stabilisator");
+jscode_data.setCell(53, 1, 919.0);
+jscode_data.setCell(54, 0, "Dämpfungssystem");
+jscode_data.setCell(54, 1, 931.0);
+jscode_data.setCell(55, 0, "Sättel");
+jscode_data.setCell(55, 1, 979.0);
+jscode_data.setCell(56, 0, "Anbauteile");
+jscode_data.setCell(56, 1, 1488.0);
+jscode_data.setCell(57, 0, "Getriebe");
+jscode_data.setCell(57, 1, 2153.0);
+jscode_data.setCell(58, 0, "Abgasanlage");
+jscode_data.setCell(58, 1, 2535.0);
+jscode_data.setCell(59, 0, "Motorraum");
+jscode_data.setCell(59, 1, 3497.0);
+jscode_data.setCell(60, 0, "Bremssystem");
+jscode_data.setCell(60, 1, 5020.0);
+jscode_data.setCell(61, 0, "HA");
+jscode_data.setCell(61, 1, 8402.0);
+jscode_data.setCell(62, 0, "VA");
+jscode_data.setCell(62, 1, 10814.0);
+jscode_data.setCell(63, 0, "Aggregate_Fahrwerk");
+jscode_data.setCell(63, 1, 37470.0);
+
+        var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
+        jscode_table.draw(jscode_data);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+

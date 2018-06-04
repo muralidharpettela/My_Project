@@ -1,0 +1,154 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var jscode_data = new google.visualization.DataTable();
+jscode_data.addColumn("string", "names", "names");
+jscode_data.addColumn("number", "category_1", "category_1");
+jscode_data.addRows(65);
+jscode_data.setCell(0, 0, "Abdeckung LTR vorn");
+jscode_data.setCell(0, 1, 1.0);
+jscode_data.setCell(1, 0, "Abdeckungen");
+jscode_data.setCell(1, 1, 1.0);
+jscode_data.setCell(2, 0, "Abdeckungen_Blenden");
+jscode_data.setCell(2, 1, 1.0);
+jscode_data.setCell(3, 0, "Längsträger_vorn");
+jscode_data.setCell(3, 1, 1.0);
+jscode_data.setCell(4, 0, "Motorraum");
+jscode_data.setCell(4, 1, 1.0);
+jscode_data.setCell(5, 0, "innen");
+jscode_data.setCell(5, 1, 1.0);
+jscode_data.setCell(6, 0, "Antrieb_Heckwischer");
+jscode_data.setCell(6, 1, 2.0);
+jscode_data.setCell(7, 0, "Crashmanagement");
+jscode_data.setCell(7, 1, 2.0);
+jscode_data.setCell(8, 0, "Dach");
+jscode_data.setCell(8, 1, 2.0);
+jscode_data.setCell(9, 0, "Wärmedämmung");
+jscode_data.setCell(9, 1, 2.0);
+jscode_data.setCell(10, 0, "Federbeinaufnahmen");
+jscode_data.setCell(10, 1, 3.0);
+jscode_data.setCell(11, 0, "Kotflügel");
+jscode_data.setCell(11, 1, 3.0);
+jscode_data.setCell(12, 0, "Leitungssatz");
+jscode_data.setCell(12, 1, 3.0);
+jscode_data.setCell(13, 0, "Frontend_Motorraum");
+jscode_data.setCell(13, 1, 4.0);
+jscode_data.setCell(14, 0, "Vorbau");
+jscode_data.setCell(14, 1, 4.0);
+jscode_data.setCell(15, 0, "LWR");
+jscode_data.setCell(15, 1, 5.0);
+jscode_data.setCell(16, 0, "Scheibenquerträger_vorn_Stirnwand");
+jscode_data.setCell(16, 1, 5.0);
+jscode_data.setCell(17, 0, "Zierleiste_Scheibe_Säule_C");
+jscode_data.setCell(17, 1, 5.0);
+jscode_data.setCell(18, 0, "Bef-Rahmen");
+jscode_data.setCell(18, 1, 6.0);
+jscode_data.setCell(19, 0, "Niveausensoren");
+jscode_data.setCell(19, 1, 6.0);
+jscode_data.setCell(20, 0, "Radhaus_vorn");
+jscode_data.setCell(20, 1, 6.0);
+jscode_data.setCell(21, 0, "Betätigungshebel");
+jscode_data.setCell(21, 1, 7.0);
+jscode_data.setCell(22, 0, "Heck");
+jscode_data.setCell(22, 1, 7.0);
+jscode_data.setCell(23, 0, "Stoßfänger");
+jscode_data.setCell(23, 1, 9.0);
+jscode_data.setCell(24, 0, "Scheinwerfer_Blinker");
+jscode_data.setCell(24, 1, 10.0);
+jscode_data.setCell(25, 0, "FK-Schloß");
+jscode_data.setCell(25, 1, 12.0);
+jscode_data.setCell(26, 0, "Assistenzsysteme");
+jscode_data.setCell(26, 1, 15.0);
+jscode_data.setCell(27, 0, "Kotflügelbank");
+jscode_data.setCell(27, 1, 15.0);
+jscode_data.setCell(28, 0, "Kofferraum_Heckklappe");
+jscode_data.setCell(28, 1, 20.0);
+jscode_data.setCell(29, 0, "Blenden");
+jscode_data.setCell(29, 1, 21.0);
+jscode_data.setCell(30, 0, "Fensterschachtleisten");
+jscode_data.setCell(30, 1, 21.0);
+jscode_data.setCell(31, 0, "Heckleuchten_Bremsleuchte");
+jscode_data.setCell(31, 1, 21.0);
+jscode_data.setCell(32, 0, "Fanghaken_Schließbügel");
+jscode_data.setCell(32, 1, 25.0);
+jscode_data.setCell(33, 0, "Griffe_Lagerbügel");
+jscode_data.setCell(33, 1, 25.0);
+jscode_data.setCell(34, 0, "Dichtung_innen");
+jscode_data.setCell(34, 1, 28.0);
+jscode_data.setCell(35, 0, "Verdeck");
+jscode_data.setCell(35, 1, 28.0);
+jscode_data.setCell(36, 0, "aussen");
+jscode_data.setCell(36, 1, 31.0);
+jscode_data.setCell(37, 0, "Dämpfungswannen_Unterfahrschutz");
+jscode_data.setCell(37, 1, 36.0);
+jscode_data.setCell(38, 0, "Türschlösser_Bowdenzüge");
+jscode_data.setCell(38, 1, 36.0);
+jscode_data.setCell(39, 0, "Schwellerbeplankung");
+jscode_data.setCell(39, 1, 37.0);
+jscode_data.setCell(40, 0, "Tankklappe");
+jscode_data.setCell(40, 1, 43.0);
+jscode_data.setCell(41, 0, "Wasserkastenvorderwand");
+jscode_data.setCell(41, 1, 51.0);
+jscode_data.setCell(42, 0, "Boden");
+jscode_data.setCell(42, 1, 53.0);
+jscode_data.setCell(43, 0, "Stoßfänger_vorn");
+jscode_data.setCell(43, 1, 57.0);
+jscode_data.setCell(44, 0, "Dachzierleiste_glanz_schwarz");
+jscode_data.setCell(44, 1, 59.0);
+jscode_data.setCell(45, 0, "Dichtung_aussen");
+jscode_data.setCell(45, 1, 73.0);
+jscode_data.setCell(46, 0, "Sonstige");
+jscode_data.setCell(46, 1, 73.0);
+jscode_data.setCell(47, 0, "Schiebedach_Großdach");
+jscode_data.setCell(47, 1, 79.0);
+jscode_data.setCell(48, 0, "Fensterheber");
+jscode_data.setCell(48, 1, 104.0);
+jscode_data.setCell(49, 0, "Aufprallträger_AHV");
+jscode_data.setCell(49, 1, 106.0);
+jscode_data.setCell(50, 0, "Spoiler");
+jscode_data.setCell(50, 1, 163.0);
+jscode_data.setCell(51, 0, "Tunnelstrebe");
+jscode_data.setCell(51, 1, 177.0);
+jscode_data.setCell(52, 0, "Dachsystem");
+jscode_data.setCell(52, 1, 180.0);
+jscode_data.setCell(53, 0, "Stoßfänger_hinten");
+jscode_data.setCell(53, 1, 195.0);
+jscode_data.setCell(54, 0, "cW-Verkleidungen");
+jscode_data.setCell(54, 1, 218.0);
+jscode_data.setCell(55, 0, "Radlaufschalen");
+jscode_data.setCell(55, 1, 226.0);
+jscode_data.setCell(56, 0, "Zierteile");
+jscode_data.setCell(56, 1, 264.0);
+jscode_data.setCell(57, 0, "Frontend");
+jscode_data.setCell(57, 1, 344.0);
+jscode_data.setCell(58, 0, "Heckklappe");
+jscode_data.setCell(58, 1, 930.0);
+jscode_data.setCell(59, 0, "Frontklappe");
+jscode_data.setCell(59, 1, 1031.0);
+jscode_data.setCell(60, 0, "Übersichtsaufnahmen");
+jscode_data.setCell(60, 1, 1259.0);
+jscode_data.setCell(61, 0, "Klappen");
+jscode_data.setCell(61, 1, 2381.0);
+jscode_data.setCell(62, 0, "Türen");
+jscode_data.setCell(62, 1, 2955.0);
+jscode_data.setCell(63, 0, "Anbauteile");
+jscode_data.setCell(63, 1, 3006.0);
+jscode_data.setCell(64, 0, "Karosserie_Montage");
+jscode_data.setCell(64, 1, 10604.0);
+
+        var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
+        jscode_table.draw(jscode_data);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+

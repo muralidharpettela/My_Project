@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var jscode_data = new google.visualization.DataTable();
+jscode_data.addColumn("string", "names", "names");
+jscode_data.addColumn("number", "category_1", "category_1");
+jscode_data.addRows(11);
+jscode_data.setCell(0, 0, "None");
+jscode_data.setCell(0, 1, 43555.0);
+jscode_data.setCell(1, 0, "Aggregate / Fahrwerk");
+jscode_data.setCell(1, 1, 516.0);
+jscode_data.setCell(2, 0, "Aggregate_Fahrwerk");
+jscode_data.setCell(2, 1, 37470.0);
+jscode_data.setCell(3, 0, "Elektrik");
+jscode_data.setCell(3, 1, 5266.0);
+jscode_data.setCell(4, 0, "Gesamtfahrzeug");
+jscode_data.setCell(4, 1, 65.0);
+jscode_data.setCell(5, 0, "Innenraum");
+jscode_data.setCell(5, 1, 62.0);
+jscode_data.setCell(6, 0, "Karosserie Montage");
+jscode_data.setCell(6, 1, 83.0);
+jscode_data.setCell(7, 0, "Karosserie Rohbau");
+jscode_data.setCell(7, 1, 782.0);
+jscode_data.setCell(8, 0, "Karosserie_Montage");
+jscode_data.setCell(8, 1, 10604.0);
+jscode_data.setCell(9, 0, "Karosserie_Rohbau");
+jscode_data.setCell(9, 1, 10708.0);
+jscode_data.setCell(10, 0, "Thermomanagement");
+jscode_data.setCell(10, 1, 1.0);
+
+        var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
+        jscode_table.draw(jscode_data);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
