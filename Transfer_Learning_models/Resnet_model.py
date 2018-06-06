@@ -31,7 +31,7 @@ data_transforms = {
     ]),
 }
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = 'C:\\Users\\pettm\\Desktop\\Test_data_2'
+data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -179,7 +179,7 @@ def visualize_model(model, num_images=6):
 
 model_ft = models.resnet18(pretrained=True)
 num_ftrs = model_ft.fc.in_features
-model_ft.fc = nn.Linear(num_ftrs, 7)
+model_ft.fc = nn.Linear(num_ftrs, 6)
 
 model_ft = model_ft.to(device)
 
@@ -216,7 +216,7 @@ for param in model_conv.parameters():
 
 # Parameters of newly constructed modules have requires_grad=True by default
 num_ftrs = model_conv.fc.in_features
-model_conv.fc = nn.Linear(num_ftrs, 7)
+model_conv.fc = nn.Linear(num_ftrs, 6)
 
 model_conv = model_conv.to(device)
 

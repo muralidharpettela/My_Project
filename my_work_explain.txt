@@ -1,0 +1,5 @@
+1.labels path 
+2.individual tables
+3.pie charts
+4.excel sheet (Our categories consideration)
+5.Data sorting

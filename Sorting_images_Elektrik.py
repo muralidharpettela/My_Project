@@ -4,7 +4,7 @@ import sys
 import json
 
 
-img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\24_may_2018\\AU736_PVS_GesFzg_20140828142521\\Elektrik\\"
+img_json_folder_path="C:\\Users\\pettm\\Downloads\\Audi_dataset\\"
 
 def run(im,json_old_path,name):
     coords=[]
@@ -59,6 +59,11 @@ def run(im,json_old_path,name):
             elif imgdata_old_to_read_open["Teilez.E1"]=='Elektrik' and imgdata_old_to_read_open["Teilez.E2"]=='Kofferraum_Heckklappe' and imgdata_old_to_read_open["Teilez.E3"]=='Heckleuchten_Bremsleuchte' and imgdata_old_to_read_open["Teilez.E4"]=='':
                 try:
                     cv2.imwrite('C:\\Users\\pettm\\Desktop\\Script_data\\Elektrik_Heckleuchten_Bremsleuchte\\'+str(name)+'.jpg',im)
+                except:
+                    print("DONE!!!")
+            elif imgdata_old_to_read_open["Teilez.E1"]=='Elektrik' and imgdata_old_to_read_open["Teilez.E2"]=='Frontend_Motorraum' and imgdata_old_to_read_open["Teilez.E3"]=='Wischeranlage' and imgdata_old_to_read_open["Teilez.E4"]=='':
+                try:
+                    cv2.imwrite('C:\\Users\\pettm\\Desktop\\Script_data\\Elektrik_FM_Wischeranlage\\'+str(name)+'.jpg',im)
                 except:
                     print("DONE!!!")
             # cv2.putText(im_draw, "Sichtweite= " + str(imgdata_old_to_read_open["distance"]) + "m", (10, 600),

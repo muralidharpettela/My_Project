@@ -1,16 +1,675 @@
 	Category_1	Category_2	Category_3	Category_4
-	12.0	26.0	141.0	247.0
-Elektrik	235.0			
-Frontend_Motorraum		141.0		
-Heckleuchten_Bremsleuchte			23.0	
-Innenraum		5.0		
-Kofferraum_Heckklappe		50.0		
-Kühlerlüftermodul			2.0	
-Lautsprecher			2.0	
-Leitungssatz			1.0	
-M-Steuergerät_Halter			2.0	
-Scheinwerfer_Blinker			55.0	
-Steuergeräte		20.0		
-Türen		5.0		
-Wischeranlage			14.0	
-Zündspulen_Starter_Generator			7.0	
+		45702.0	79743.0	101918.0
+-->-->-->	40660.0			
+ABS			15.0	
+AKF-Behälter				9.0
+Abdeckung LTR vorn				1.0
+Abdeckungen				7.0
+Abdeckungen_Blenden				1.0
+Abgasanlage		2511.0		
+Abschirmbleche			1.0	
+Achslenker			710.0	
+Aggregate / Fahrwerk-->-->-->	88.0			
+Aggregate / Fahrwerk-->Abgasanlage-->Halter und Aufhängungen-->	1.0			
+Aggregate / Fahrwerk-->Abgasanlage-->Schalldämpfer-->	11.0			
+Aggregate / Fahrwerk-->Anbauteile Motorraum-->-->	10.0			
+Aggregate / Fahrwerk-->Bremssystem-->-->	1.0			
+Aggregate / Fahrwerk-->Bremssystem-->BKV-->	10.0			
+Aggregate / Fahrwerk-->Bremssystem-->Bremsleitungen-->	7.0			
+Aggregate / Fahrwerk-->Bremssystem-->Bremsscheiben-->	4.0			
+Aggregate / Fahrwerk-->Bremssystem-->ESC-Aggregat-->	4.0			
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->	10.0			
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->HA links	3.0			
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->VA links	3.0			
+Aggregate / Fahrwerk-->Getriebe-->-->	13.0			
+Aggregate / Fahrwerk-->Getriebe-->Getriebegehäuse-->	13.0			
+Aggregate / Fahrwerk-->Getriebe-->Getriebestütze / -lager-->	2.0			
+Aggregate / Fahrwerk-->Getriebe-->Tunnelquerträger-->	19.0			
+Aggregate / Fahrwerk-->HA-->-->	23.0			
+Aggregate / Fahrwerk-->HA-->Achslenker-->	5.0			
+Aggregate / Fahrwerk-->HA-->Anbauteile-->	2.0			
+Aggregate / Fahrwerk-->HA-->Dämpfungssystem-->	2.0			
+Aggregate / Fahrwerk-->HA-->Dämpfungssystem-->Dämpfer	6.0			
+Aggregate / Fahrwerk-->HA-->Dämpfungssystem-->Luftfederkompr	3.0			
+Aggregate / Fahrwerk-->HA-->HIRA-->	10.0			
+Aggregate / Fahrwerk-->HA-->Schwenklager Radträger-->	4.0			
+Aggregate / Fahrwerk-->HA-->Stabilisator-->	15.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->-->	21.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->Druckrahmen-->	37.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->Kraftstoffleitungen-->	7.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->Tank-->	13.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->Tank-->Einfüllstutzen	1.0			
+Aggregate / Fahrwerk-->Kraftstoffanlage-->Tank-->Spannbänder	6.0			
+Aggregate / Fahrwerk-->Lenkung-->Lenkgetriebe-->	10.0			
+Aggregate / Fahrwerk-->Lenkung-->Lenksäule-->	10.0			
+Aggregate / Fahrwerk-->Motor-->-->	13.0			
+Aggregate / Fahrwerk-->Motor-->Anbauteile-->	28.0			
+Aggregate / Fahrwerk-->Motor-->Motorlager-->	2.0			
+Aggregate / Fahrwerk-->VA-->-->	2.0			
+Aggregate / Fahrwerk-->VA-->Achslenker-->	7.0			
+Aggregate / Fahrwerk-->VA-->Achslenker-->Querlenker links	1.0			
+Aggregate / Fahrwerk-->VA-->Anbauteile-->	1.0			
+Aggregate / Fahrwerk-->VA-->Dämpfungssystem-->	32.0			
+Aggregate / Fahrwerk-->VA-->Gelenkwellen-->	12.0			
+Aggregate / Fahrwerk-->VA-->HIRA-->	23.0			
+Aggregate / Fahrwerk-->VA-->Schwenklager  Radträger-->	13.0			
+Aggregate / Fahrwerk-->VA-->Schwenklager  Radträger-->Radlager	2.0			
+Aggregate / Fahrwerk-->VA-->Stabilisator-->	5.0			
+Aggregate / Fahrwerk-->VA-->Übersichten ZSB-->	1.0			
+Aggregate_Fahrwerk-->-->-->	2892.0			
+Aggregate_Fahrwerk-->Abgasanlage-->-->	1886.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Abschirmbleche-->	1.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Anbauteile-->	457.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Dämpfungssystem-->	3.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Endrohrblenden-->	116.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Flexelemente-->	3.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Halter_Aufhängungen-->	26.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Tank-->	2.0			
+Aggregate_Fahrwerk-->Abgasanlage-->Übersichten ZSB-->	5.0			
+Aggregate_Fahrwerk-->Bremssystem-->-->	3296.0			
+Aggregate_Fahrwerk-->Bremssystem-->BKV-->	25.0			
+Aggregate_Fahrwerk-->Bremssystem-->Bremsleitungen-->	363.0			
+Aggregate_Fahrwerk-->Bremssystem-->Bremsscheiben-->	220.0			
+Aggregate_Fahrwerk-->Bremssystem-->Bremsscheiben-->Hinten	9.0			
+Aggregate_Fahrwerk-->Bremssystem-->Bremsscheiben-->Vorne	6.0			
+Aggregate_Fahrwerk-->Bremssystem-->Dämpfungssystem-->	4.0			
+Aggregate_Fahrwerk-->Bremssystem-->ESP-Aggregat-->	100.0			
+Aggregate_Fahrwerk-->Bremssystem-->Flexelemente-->	3.0			
+Aggregate_Fahrwerk-->Bremssystem-->Halter_Aufhängungen-->	9.0			
+Aggregate_Fahrwerk-->Bremssystem-->Klimaanlage-->Luftfederkompr	4.0			
+Aggregate_Fahrwerk-->Bremssystem-->Sättel-->	950.0			
+Aggregate_Fahrwerk-->Bremssystem-->Sättel-->HA_rechts	4.0			
+Aggregate_Fahrwerk-->Bremssystem-->Sättel-->VA_links	1.0			
+Aggregate_Fahrwerk-->Bremssystem-->Sättel-->VA_rechts	5.0			
+Aggregate_Fahrwerk-->Bremssystem-->Tank-->	6.0			
+Aggregate_Fahrwerk-->Bremssystem-->Übersichten ZSB-->	15.0			
+Aggregate_Fahrwerk-->Getriebe-->-->	1590.0			
+Aggregate_Fahrwerk-->Getriebe-->Getriebeglocke-->	163.0			
+Aggregate_Fahrwerk-->Getriebe-->Getriebestütze-->	231.0			
+Aggregate_Fahrwerk-->Getriebe-->Halter_Aufhängungen-->	2.0			
+Aggregate_Fahrwerk-->Getriebe-->Oelleitungen-->	40.0			
+Aggregate_Fahrwerk-->Getriebe-->Schaltgestänge-->	127.0			
+Aggregate_Fahrwerk-->HA-->-->	6218.0			
+Aggregate_Fahrwerk-->HA-->Achslenker-->	367.0			
+Aggregate_Fahrwerk-->HA-->Achslenker-->Querlenker	1.0			
+Aggregate_Fahrwerk-->HA-->Anbauteile-->	18.0			
+Aggregate_Fahrwerk-->HA-->Dämpfungssystem-->	395.0			
+Aggregate_Fahrwerk-->HA-->Dämpfungssystem-->Dämpfer	7.0			
+Aggregate_Fahrwerk-->HA-->Dämpfungssystem-->Luftfederkompr	4.0			
+Aggregate_Fahrwerk-->HA-->Gelenkwellen-->	129.0			
+Aggregate_Fahrwerk-->HA-->HA-Differential-->	79.0			
+Aggregate_Fahrwerk-->HA-->HIRA-->	567.0			
+Aggregate_Fahrwerk-->HA-->Schwenklager_Radträger-->	41.0			
+Aggregate_Fahrwerk-->HA-->Stabilisator-->	436.0			
+Aggregate_Fahrwerk-->HA-->Übersichten ZSB-->	11.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->-->	106.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->Kraftstoffleitungen-->	162.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->Tank-->	405.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->Tank-->AKF-Behälter	9.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->Tank-->Einfüllstutzen	37.0			
+Aggregate_Fahrwerk-->Kraftstoffanlage-->Übersichten ZSB-->	1.0			
+Aggregate_Fahrwerk-->Lenkung-->-->	750.0			
+Aggregate_Fahrwerk-->Lenkung-->Lenkgetriebe-->	124.0			
+Aggregate_Fahrwerk-->Lenkung-->Lenksäule-->	45.0			
+Aggregate_Fahrwerk-->Motor-->-->	144.0			
+Aggregate_Fahrwerk-->Motor-->Anbauteile-->	144.0			
+Aggregate_Fahrwerk-->Motor-->Motorkühlung-->	59.0			
+Aggregate_Fahrwerk-->Motor-->Motorkühlung-->Heizung	5.0			
+Aggregate_Fahrwerk-->Motor-->Motorkühlung-->Ladeluftkühler_LLK	14.0			
+Aggregate_Fahrwerk-->Motor-->Motorkühlung-->Rohre_Leitungen	119.0			
+Aggregate_Fahrwerk-->Motor-->Ölwanne-->	31.0			
+Aggregate_Fahrwerk-->Motor-->Ölwanne-->Deckel	2.0			
+Aggregate_Fahrwerk-->Motorraum-->-->	2421.0			
+Aggregate_Fahrwerk-->Motorraum-->Anbauteile-->	801.0			
+Aggregate_Fahrwerk-->Motorraum-->Anbauteile-->Leitungen	9.0			
+Aggregate_Fahrwerk-->Motorraum-->BKV-->Leitungen	6.0			
+Aggregate_Fahrwerk-->Motorraum-->Klimaanlage-->	94.0			
+Aggregate_Fahrwerk-->Motorraum-->Klimaanlage-->Klimakühler	9.0			
+Aggregate_Fahrwerk-->Motorraum-->Klimaanlage-->Kompressor	21.0			
+Aggregate_Fahrwerk-->Motorraum-->Klimaanlage-->Leitungen	31.0			
+Aggregate_Fahrwerk-->Motorraum-->Klimaanlage-->Luftfederkompr	10.0			
+Aggregate_Fahrwerk-->Motorraum-->Sättel-->Einfüllstutzen	12.0			
+Aggregate_Fahrwerk-->Motorraum-->Sättel-->Luftfederkompr	7.0			
+Aggregate_Fahrwerk-->VA-->-->	8521.0			
+Aggregate_Fahrwerk-->VA-->Achslenker-->	316.0			
+Aggregate_Fahrwerk-->VA-->Achslenker-->Querlenker_links	6.0			
+Aggregate_Fahrwerk-->VA-->Achslenker-->Querlenker_rechts	6.0			
+Aggregate_Fahrwerk-->VA-->Achslenker-->Traglenker,-gelenk	1.0			
+Aggregate_Fahrwerk-->VA-->Anbauteile-->	59.0			
+Aggregate_Fahrwerk-->VA-->Dämpfungssystem-->	507.0			
+Aggregate_Fahrwerk-->VA-->Dämpfungssystem-->Dämpfer_links	4.0			
+Aggregate_Fahrwerk-->VA-->Dämpfungssystem-->Dämpfer_rechts	7.0			
+Aggregate_Fahrwerk-->VA-->Gelenkwellen-->	237.0			
+Aggregate_Fahrwerk-->VA-->Gelenkwellen-->Gelenkwellen_links	10.0			
+Aggregate_Fahrwerk-->VA-->Gelenkwellen-->Gelenkwellen_rechts	3.0			
+Aggregate_Fahrwerk-->VA-->HIRA-->	341.0			
+Aggregate_Fahrwerk-->VA-->Schwenklager  Radträger-->	154.0			
+Aggregate_Fahrwerk-->VA-->Stabilisator-->	483.0			
+Aggregate_Fahrwerk-->VA-->Übersichten ZSB-->	7.0			
+Airbag			3.0	
+Airbagsysteme			1.0	
+Anbauteile		5838.0	1519.0	
+Anbauteile Motorraum		10.0		
+Anhängevorrichtung			3.0	
+Antennen			16.0	
+Antrieb_Heckwischer				5.0
+Anzeigeelemente			10.0	
+Anzeigegeräte			14.0	
+Assistenzsysteme			84.0	
+Aufbau		4825.0	36.0	
+Aufprallträger_AHV			106.0	
+Aussenteil				13.0
+Außenraum 12V/48V		60.0		
+Außenspiegel			143.0	
+BKV			41.0	
+Bedienelemente_Lenkrad			21.0	
+Bef-Rahmen			6.0	
+Beleuchtung			22.0	
+Betätigungselemente			4.0	
+Betätigungshebel				7.0
+Blenden				22.0
+Boden		635.0	53.0	
+Boden vorn			5.0	
+Boden_hinten			119.0	
+Boden_vorn			217.0	
+Bremsleitungen			370.0	
+Bremsscheiben			239.0	
+Bremssystem		5062.0		
+Crashmanagement			2.0	
+Dach			397.0	
+Dachsystem		178.0		
+Dachzierleiste_glanz_schwarz				69.0
+Deckel				2.0
+Dichtung_aussen				77.0
+Dichtung_innen				28.0
+Druckrahmen			37.0	
+Dämpfer				13.0
+Dämpfer_links				4.0
+Dämpfer_rechts				7.0
+Dämpfungssystem			974.0	
+Dämpfungswannen_Unterfahrschutz			36.0	
+ESC-Aggregat			4.0	
+ESP-Aggregat			100.0	
+Einfüllstutzen				50.0
+El_Struktur		116.0		
+Elektrik-->-->-->	1357.0			
+Elektrik-->-->Kühlerlüftermodul-->	2.0			
+Elektrik-->-->Scheinwerfer_Blinker-->	1.0			
+Elektrik-->-->Wischeranlage-->	1.0			
+Elektrik-->-->Zündspulen_Starter_Generator-->	1.0			
+Elektrik-->Außenraum 12V/48V-->-->	8.0			
+Elektrik-->Außenraum 12V/48V-->Antennen-->	9.0			
+Elektrik-->Außenraum 12V/48V-->Assistenzsysteme-->	7.0			
+Elektrik-->Außenraum 12V/48V-->Beleuchtung-->	22.0			
+Elektrik-->Außenraum 12V/48V-->Fanfaren/Sound-->	7.0			
+Elektrik-->Außenraum 12V/48V-->Lüfter-->	2.0			
+Elektrik-->Außenraum 12V/48V-->Starter/Generator-->	2.0			
+Elektrik-->Außenraum 12V/48V-->Steuergeräte sonstige-->	3.0			
+Elektrik-->El_Struktur-->-->	6.0			
+Elektrik-->El_Struktur-->Leitungssatz-->	63.0			
+Elektrik-->El_Struktur-->Masse_Anzahl_Ort-->Innenraum_1-7	34.0			
+Elektrik-->El_Struktur-->Masse_Anzahl_Ort-->Motorraum_8-12	13.0			
+Elektrik-->Fahrwerkselektronik-->-->	2.0			
+Elektrik-->Fahrwerkselektronik-->ABS-->	15.0			
+Elektrik-->Fahrwerkselektronik-->Niveausensoren-->LWR	29.0			
+Elektrik-->Frontend_Motorraum-->-->	975.0			
+Elektrik-->Frontend_Motorraum-->Assistenzsysteme-->	23.0			
+Elektrik-->Frontend_Motorraum-->Assistenzsysteme-->Signalhörner	8.0			
+Elektrik-->Frontend_Motorraum-->Außenspiegel-->	1.0			
+Elektrik-->Frontend_Motorraum-->Heckleuchten_Bremsleuchte-->	8.0			
+Elektrik-->Frontend_Motorraum-->Kühlerlüftermodul-->	14.0			
+Elektrik-->Frontend_Motorraum-->M-Steuergerät_Halter-->	35.0			
+Elektrik-->Frontend_Motorraum-->Scheinwerfer_Blinker-->	611.0			
+Elektrik-->Frontend_Motorraum-->Wischeranlage-->	175.0			
+Elektrik-->Frontend_Motorraum-->Wischeranlage-->aussen	1.0			
+Elektrik-->Frontend_Motorraum-->Zündspulen_Starter_Generator-->	61.0			
+Elektrik-->Frontend_Motorraum-->Zündspulen_Starter_Generator-->Starter	18.0			
+Elektrik-->Innenraum 12V/48V-->Anzeigeelemente-->	10.0			
+Elektrik-->Innenraum 12V/48V-->Betätigungselemente-->	4.0			
+Elektrik-->Innenraum 12V/48V-->Steuergeräte sonstige-->	2.0			
+Elektrik-->Innenraum-->-->	141.0			
+Elektrik-->Innenraum-->Anzeigegeräte-->	14.0			
+Elektrik-->Innenraum-->Bedienelemente_Lenkrad-->	21.0			
+Elektrik-->Innenraum-->Lautsprecher-->	18.0			
+Elektrik-->Innenraum-->Parkassistent-->	2.0			
+Elektrik-->Innenraum-->Scheinwerfer_Blinker-->	1.0			
+Elektrik-->Karosseriemechatronik-->Airbagsysteme-->	1.0			
+Elektrik-->Karosseriemechatronik-->Wischeranlage-->	9.0			
+Elektrik-->Kofferraum_Heckklappe-->-->	247.0			
+Elektrik-->Kofferraum_Heckklappe-->Antennen-->	7.0			
+Elektrik-->Kofferraum_Heckklappe-->Assistenzsysteme-->	28.0			
+Elektrik-->Kofferraum_Heckklappe-->Assistenzsysteme-->Antrieb_Heckwischer	3.0			
+Elektrik-->Kofferraum_Heckklappe-->Außenspiegel-->	2.0			
+Elektrik-->Kofferraum_Heckklappe-->Heckleuchten_Bremsleuchte-->	229.0			
+Elektrik-->Kofferraum_Heckklappe-->Heckleuchten_Bremsleuchte-->links	11.0			
+Elektrik-->Kofferraum_Heckklappe-->Heckleuchten_Bremsleuchte-->rechts	13.0			
+Elektrik-->Kofferraum_Heckklappe-->Scheinwerfer_Blinker-->	6.0			
+Elektrik-->Kofferraum_Heckklappe-->Wischeranlage-->	1.0			
+Elektrik-->Kofferraum_Heckklappe-->Zündspulen_Starter_Generator-->	3.0			
+Elektrik-->Steuergeräte-->-->	36.0			
+Elektrik-->Steuergeräte-->Airbag-->	3.0			
+Elektrik-->Türen-->-->	144.0			
+Elektrik-->Türen-->Außenspiegel-->	123.0			
+Elektrik-->Türen-->Außenspiegel-->links	5.0			
+Elektrik-->Türen-->Außenspiegel-->rechts	12.0			
+Elektrik-->Türen-->Leitungssatz-->	1.0			
+Elektrik-->Türen-->Scheinwerfer_Blinker-->	1.0			
+Elektrik-->Türen-->Wischeranlage-->	1.0			
+Elektrik-->Türen-->Wischeranlage-->aussen	7.0			
+Endrohrblenden			116.0	
+FK-Schloß				12.0
+Fahrertools		31.0		
+Fahrwerkselektronik		46.0		
+Fanfaren/Sound			7.0	
+Fanghaken Schließbügel				9.0
+Fanghaken_Schließbügel				25.0
+Federbeinaufnahmen			189.0	
+Fensterheber				104.0
+Fensterschachtleisten				22.0
+Flexelemente			6.0	
+Frontend		364.0		
+Frontend_Motorraum		1934.0		
+Frontendträger			5.0	
+Frontklappe			1411.0	
+Gehängeaufnahme				25.0
+Gelenkwellen			391.0	
+Gelenkwellen_links				10.0
+Gelenkwellen_rechts				3.0
+Gesamtfahrzeug-->-->-->	64.0			
+Gesamtfahrzeug-->Übersichtsaufnahmen-->-->	1.0			
+Getriebe		2200.0		
+Getriebegehäuse			13.0	
+Getriebeglocke			163.0	
+Getriebestütze			231.0	
+Getriebestütze / -lager			2.0	
+Griffe_Lagerbügel				27.0
+Gurtsystem		1.0		
+HA		8343.0		
+HA links				3.0
+HA-Differential			79.0	
+HA_rechts				4.0
+HIRA			941.0	
+Halter und Aufhängungen			1.0	
+Halter_Aufhängungen			37.0	
+Heck			540.0	
+Heckklappe			1382.0	
+Heckklappenpuffer				2.0
+Heckleuchten_Bremsleuchte			283.0	
+Heizung				5.0
+Hinten				9.0
+Hinten Links			17.0	
+Hinten Rechts			22.0	
+Hinten_Links			264.0	215.0
+Hinten_Rechts			271.0	207.0
+Innenraum		197.0	295.0	
+Innenraum 12V/48V		16.0		
+Innenraum-->-->-->	2.0			
+Innenraum-->Fahrertools-->Pedale etc-->	31.0			
+Innenraum-->Gurtsystem-->-->	1.0			
+Innenraum-->Sitzschienen-->-->	19.0			
+Innenraum-->Übersicht-->-->	9.0			
+Innenraum_1-7				34.0
+Innenteil				19.0
+Innenverkleidungen				5.0
+Karosserie Montage-->-->-->	2.0			
+Karosserie Montage-->Anbauteile-->-->	6.0			
+Karosserie Montage-->Anbauteile-->Radlaufblenden-->	2.0			
+Karosserie Montage-->Anbauteile-->Radlaufblenden-->hinten links	2.0			
+Karosserie Montage-->Anbauteile-->Unterboden-->cW-Verkleidung	9.0			
+Karosserie Montage-->Anbauteile-->Zierteile-->	2.0			
+Karosserie Montage-->Dachsystem-->Rahmen-->	5.0			
+Karosserie Montage-->Frontend-->-->	15.0			
+Karosserie Montage-->Frontend-->Frontendträger-->	5.0			
+Karosserie Montage-->Klappen-->Frontklappe-->Fanghaken Schließbügel	9.0			
+Karosserie Montage-->Klappen-->Heckklappe-->Heckklappenpuffer	2.0			
+Karosserie Montage-->Klappen-->Heckklappe-->Schließkeil	2.0			
+Karosserie Montage-->Stoßfänger hinten-->Anhängevorrichtung-->	3.0			
+Karosserie Montage-->Türen-->Hinten Links-->	4.0			
+Karosserie Montage-->Türen-->Hinten Rechts-->	3.0			
+Karosserie Montage-->Türen-->Vorne Links-->	5.0			
+Karosserie Montage-->Türen-->Vorne Links-->Türschlösser Bowdenzüge	2.0			
+Karosserie Montage-->Türen-->Vorne Rechts-->	5.0			
+Karosserie Rohbau-->-->-->	480.0			
+Karosserie Rohbau-->Aufbau-->-->	34.0			
+Karosserie Rohbau-->Aufbau-->Dach-->	7.0			
+Karosserie Rohbau-->Aufbau-->Radhaus hinten-->	1.0			
+Karosserie Rohbau-->Aufbau-->Seitenteil-->	6.0			
+Karosserie Rohbau-->Aufbau-->Säule A-->	8.0			
+Karosserie Rohbau-->Boden-->-->	30.0			
+Karosserie Rohbau-->Boden-->Boden vorn-->	1.0			
+Karosserie Rohbau-->Boden-->Boden vorn-->Gehängeaufnahme	4.0			
+Karosserie Rohbau-->Klappen-->-->	1.0			
+Karosserie Rohbau-->Klappen-->Frontklappe-->	36.0			
+Karosserie Rohbau-->Klappen-->Frontklappe-->Aussenteil	3.0			
+Karosserie Rohbau-->Klappen-->Frontklappe-->Innenteil	19.0			
+Karosserie Rohbau-->Klappen-->Frontklappe-->Scharnier	8.0			
+Karosserie Rohbau-->Klappen-->Heckklappe-->	14.0			
+Karosserie Rohbau-->Klappen-->Heckklappe-->Scharnier	3.0			
+Karosserie Rohbau-->Türen-->-->	9.0			
+Karosserie Rohbau-->Türen-->Hinten Links-->	11.0			
+Karosserie Rohbau-->Türen-->Hinten Links-->Aussenteil	2.0			
+Karosserie Rohbau-->Türen-->Hinten Rechts-->	17.0			
+Karosserie Rohbau-->Türen-->Hinten Rechts-->Aussenteil	2.0			
+Karosserie Rohbau-->Türen-->Vorne Links-->	29.0			
+Karosserie Rohbau-->Türen-->Vorne Links-->Aussenteil	3.0			
+Karosserie Rohbau-->Türen-->Vorne Rechts-->	4.0			
+Karosserie Rohbau-->Türen-->Vorne Rechts-->Aussenteil	3.0			
+Karosserie Rohbau-->Vorbau-->-->	4.0			
+Karosserie Rohbau-->Vorbau-->Federbeinaufnahmen-->	3.0			
+Karosserie Rohbau-->Vorbau-->Kotflügel-->	32.0			
+Karosserie Rohbau-->Vorbau-->Längsträger vorn-->	8.0			
+Karosserie_Montage-->-->-->	129.0			
+Karosserie_Montage-->-->-->Türschlösser_Bowdenzüge	1.0			
+Karosserie_Montage-->Anbauteile-->-->	1936.0			
+Karosserie_Montage-->Anbauteile-->Assistenzsysteme-->	15.0			
+Karosserie_Montage-->Anbauteile-->Aufbau-->	3.0			
+Karosserie_Montage-->Anbauteile-->Dach-->	2.0			
+Karosserie_Montage-->Anbauteile-->Dämpfungswannen_Unterfahrschutz-->	36.0			
+Karosserie_Montage-->Anbauteile-->Federbeinaufnahmen-->	3.0			
+Karosserie_Montage-->Anbauteile-->Frontklappe-->	9.0			
+Karosserie_Montage-->Anbauteile-->Heckklappe-->	16.0			
+Karosserie_Montage-->Anbauteile-->Kotflügel-->	3.0			
+Karosserie_Montage-->Anbauteile-->Radlaufschalen-->	226.0			
+Karosserie_Montage-->Anbauteile-->Schiebedach_Großdach-->	27.0			
+Karosserie_Montage-->Anbauteile-->Sonstige-->	34.0			
+Karosserie_Montage-->Anbauteile-->Sonstige-->Abdeckung LTR vorn	1.0			
+Karosserie_Montage-->Anbauteile-->Tunnelstrebe-->	177.0			
+Karosserie_Montage-->Anbauteile-->Wasserkastenvorderwand-->	51.0			
+Karosserie_Montage-->Anbauteile-->Wärmedämmung-->	2.0			
+Karosserie_Montage-->Anbauteile-->Zierteile-->	233.0			
+Karosserie_Montage-->Anbauteile-->Zierteile-->Dachzierleiste_glanz_schwarz	26.0			
+Karosserie_Montage-->Anbauteile-->Zierteile-->Zierleiste_Scheibe_Säule_C	5.0			
+Karosserie_Montage-->Anbauteile-->cW-Verkleidungen-->	191.0			
+Karosserie_Montage-->Aufbau-->Heckklappe-->	2.0			
+Karosserie_Montage-->Aufbau-->Heckleuchten_Bremsleuchte-->	5.0			
+Karosserie_Montage-->Aufbau-->Niveausensoren-->	3.0			
+Karosserie_Montage-->Dachsystem-->-->	72.0			
+Karosserie_Montage-->Dachsystem-->Schiebedach_Großdach-->	49.0			
+Karosserie_Montage-->Dachsystem-->Schiebedach_Großdach-->Dachzierleiste_glanz_schwarz	3.0			
+Karosserie_Montage-->Dachsystem-->Sonstige-->	28.0			
+Karosserie_Montage-->Dachsystem-->Verdeck-->	21.0			
+Karosserie_Montage-->Frontend-->-->	306.0			
+Karosserie_Montage-->Frontend-->Bef-Rahmen-->	6.0			
+Karosserie_Montage-->Frontend-->Heckklappe-->	2.0			
+Karosserie_Montage-->Frontend-->Scheinwerfer_Blinker-->	6.0			
+Karosserie_Montage-->Frontend-->Stoßfänger-->	5.0			
+Karosserie_Montage-->Frontend-->Stoßfänger-->Dachzierleiste_glanz_schwarz	2.0			
+Karosserie_Montage-->Frontend-->cW-Verkleidungen-->	17.0			
+Karosserie_Montage-->Frontend_Motorraum-->cW-Verkleidungen-->	4.0			
+Karosserie_Montage-->Klappen-->-->	385.0			
+Karosserie_Montage-->Klappen-->Aufbau-->	7.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->	899.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->Betätigungshebel	6.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->Dachzierleiste_glanz_schwarz	8.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->FK-Schloß	7.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->Fanghaken_Schließbügel	18.0			
+Karosserie_Montage-->Klappen-->Frontklappe-->Türschlösser_Bowdenzüge	3.0			
+Karosserie_Montage-->Klappen-->Heck-->	3.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->	655.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Dachzierleiste_glanz_schwarz	19.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Fanghaken_Schließbügel	4.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Hinten_Links	3.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Hinten_Rechts	9.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Spoiler	112.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Vorne_Links	4.0			
+Karosserie_Montage-->Klappen-->Heckklappe-->Vorne_Rechts	2.0			
+Karosserie_Montage-->Klappen-->Heckleuchten_Bremsleuchte-->	12.0			
+Karosserie_Montage-->Klappen-->Tankklappe-->	43.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Heck-->	4.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Kotflügelbank-->	2.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Leitungssatz-->	3.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Niveausensoren-->	3.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Radhaus_vorn-->	6.0			
+Karosserie_Montage-->Kofferraum_Heckklappe-->Scheibenquerträger_vorn_Stirnwand-->	2.0			
+Karosserie_Montage-->Schwellerbeplankung-->-->	37.0			
+Karosserie_Montage-->Stoßfänger_hinten-->-->	84.0			
+Karosserie_Montage-->Stoßfänger_hinten-->Aufprallträger_AHV-->	106.0			
+Karosserie_Montage-->Stoßfänger_hinten-->Längsträger_vorn-->	1.0			
+Karosserie_Montage-->Stoßfänger_vorn-->-->	45.0			
+Karosserie_Montage-->Stoßfänger_vorn-->Crashmanagement-->	2.0			
+Karosserie_Montage-->Stoßfänger_vorn-->Scheinwerfer_Blinker-->	4.0			
+Karosserie_Montage-->Stoßfänger_vorn-->cW-Verkleidungen-->	6.0			
+Karosserie_Montage-->Türen-->-->	1692.0			
+Karosserie_Montage-->Türen-->Heckklappe-->	1.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->	172.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Blenden	7.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Dichtung_aussen	24.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Dichtung_innen	6.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Fensterheber	22.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Fensterschachtleisten	5.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Griffe_Lagerbügel	8.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->Türschlösser_Bowdenzüge	12.0			
+Karosserie_Montage-->Türen-->Hinten_Links-->aussen	8.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->	187.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Antrieb_Heckwischer	2.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Dichtung_aussen	13.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Dichtung_innen	6.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Fensterheber	23.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Fensterschachtleisten	6.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Griffe_Lagerbügel	7.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Hinten_Rechts	1.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Türschlösser_Bowdenzüge	1.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->Vorne_Links	2.0			
+Karosserie_Montage-->Türen-->Hinten_Rechts-->aussen	23.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->	233.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Abdeckungen	1.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Betätigungshebel	1.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Blenden	13.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Dichtung_aussen	23.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Dichtung_innen	6.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->FK-Schloß	1.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Fensterheber	36.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Fensterschachtleisten	10.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Griffe_Lagerbügel	10.0			
+Karosserie_Montage-->Türen-->Vorne_Links-->Türschlösser_Bowdenzüge	18.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->	210.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Blenden	1.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Dachzierleiste_glanz_schwarz	1.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Dichtung_aussen	13.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Dichtung_innen	10.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->FK-Schloß	4.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Fanghaken_Schließbügel	2.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Fensterheber	23.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Spoiler	4.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Türschlösser_Bowdenzüge	1.0			
+Karosserie_Montage-->Türen-->Vorne_Rechts-->Vorne_Rechts	4.0			
+Karosserie_Montage-->Vorbau-->Heckleuchten_Bremsleuchte-->	4.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->-->	1163.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Aufbau-->	24.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Boden-->	37.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Boden-->Abdeckungen_Blenden	1.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Boden-->LWR	5.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Boden-->Spoiler	9.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Boden-->innen	1.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Kotflügelbank-->	13.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Motorraum-->Fanghaken_Schließbügel	1.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Scheibenquerträger_vorn_Stirnwand-->	3.0			
+Karosserie_Montage-->Übersichtsaufnahmen-->Stoßfänger-->	2.0			
+Karosserie_Rohbau-->-->-->	21.0			
+Karosserie_Rohbau-->Anbauteile-->-->	88.0			
+Karosserie_Rohbau-->Anbauteile-->Aufbau-->	2.0			
+Karosserie_Rohbau-->Anbauteile-->Dach-->	8.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->	360.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Abdeckungen	5.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Dachzierleiste_glanz_schwarz	10.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Griffe_Lagerbügel	2.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Innenverkleidungen	5.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Spoiler	3.0			
+Karosserie_Rohbau-->Anbauteile-->Frontklappe-->Türschlösser_Bowdenzüge	1.0			
+Karosserie_Rohbau-->Anbauteile-->Heck-->	8.0			
+Karosserie_Rohbau-->Anbauteile-->Heckklappe-->	532.0			
+Karosserie_Rohbau-->Anbauteile-->Kotflügel-->	386.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->	439.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Blenden	1.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Dichtung_aussen	4.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Fensterschachtleisten	1.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Hinten_Links	212.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Hinten_Rechts	197.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Türschlösser_Bowdenzüge	3.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Vorne_Links	278.0			
+Karosserie_Rohbau-->Anbauteile-->Türen-->Vorne_Rechts	276.0			
+Karosserie_Rohbau-->Aufbau-->-->	513.0			
+Karosserie_Rohbau-->Aufbau-->Boden_vorn-->	19.0			
+Karosserie_Rohbau-->Aufbau-->Dach-->	375.0			
+Karosserie_Rohbau-->Aufbau-->Heck-->	514.0			
+Karosserie_Rohbau-->Aufbau-->Innenraum-->	295.0			
+Karosserie_Rohbau-->Aufbau-->Kotflügel-->	11.0			
+Karosserie_Rohbau-->Aufbau-->Kotflügelbank-->	9.0			
+Karosserie_Rohbau-->Aufbau-->Längsträger_vorn-->	2.0			
+Karosserie_Rohbau-->Aufbau-->Radhaus_hinten-->	328.0			
+Karosserie_Rohbau-->Aufbau-->Radhaus_vorn-->	5.0			
+Karosserie_Rohbau-->Aufbau-->Schweller-->	378.0			
+Karosserie_Rohbau-->Aufbau-->Seitenteil-->	1433.0			
+Karosserie_Rohbau-->Aufbau-->Säule_A-->	588.0			
+Karosserie_Rohbau-->Aufbau-->Säule_B-->	279.0			
+Karosserie_Rohbau-->Aufbau-->Säule_C-->	4.0			
+Karosserie_Rohbau-->Aufbau-->Wasserkasten-->	6.0			
+Karosserie_Rohbau-->Boden-->-->	246.0			
+Karosserie_Rohbau-->Boden-->Boden_hinten-->	114.0			
+Karosserie_Rohbau-->Boden-->Boden_hinten-->Tunnelbrücke	2.0			
+Karosserie_Rohbau-->Boden-->Boden_vorn-->	177.0			
+Karosserie_Rohbau-->Boden-->Boden_vorn-->Gehängeaufnahme	21.0			
+Karosserie_Rohbau-->Boden-->Dach-->	2.0			
+Karosserie_Rohbau-->Boden-->Radhaus_hinten-->	9.0			
+Karosserie_Rohbau-->Boden-->Seitenteil-->	29.0			
+Karosserie_Rohbau-->Klappen-->Heck-->	1.0			
+Karosserie_Rohbau-->Klappen-->Heckleuchten_Bremsleuchte-->	1.0			
+Karosserie_Rohbau-->Kofferraum_Heckklappe-->-->	6.0			
+Karosserie_Rohbau-->Kofferraum_Heckklappe-->Leitungssatz-->	8.0			
+Karosserie_Rohbau-->Kofferraum_Heckklappe-->Tankklappe-->	12.0			
+Karosserie_Rohbau-->Vorbau-->-->	276.0			
+Karosserie_Rohbau-->Vorbau-->Boden_hinten-->	3.0			
+Karosserie_Rohbau-->Vorbau-->Dach-->	3.0			
+Karosserie_Rohbau-->Vorbau-->Federbeinaufnahmen-->	183.0			
+Karosserie_Rohbau-->Vorbau-->Kotflügel-->	7.0			
+Karosserie_Rohbau-->Vorbau-->Kotflügelbank-->	189.0			
+Karosserie_Rohbau-->Vorbau-->Längsträger_vorn-->	117.0			
+Karosserie_Rohbau-->Vorbau-->Radhaus_hinten-->	9.0			
+Karosserie_Rohbau-->Vorbau-->Radhaus_vorn-->	42.0			
+Karosserie_Rohbau-->Vorbau-->Scheibenquerträger_vorn_Stirnwand-->	169.0			
+Karosserie_Rohbau-->Vorbau-->Seitenteil-->	3.0			
+Karosserie_Rohbau-->Vorbau-->Säule_A-->	23.0			
+Karosserie_Rohbau-->Vorbau-->Türen-->	2.0			
+Karosserie_Rohbau-->Vorbau-->Wasserkasten-->	264.0			
+Karosserie_Rohbau-->Vorbau-->Wasserkasten-->Abdeckungen	1.0			
+Karosserie_Rohbau-->Übersichtsaufnahmen-->-->	494.0			
+Karosserie_Rohbau-->Übersichtsaufnahmen-->Heck-->	10.0			
+Karosserie_Rohbau-->Übersichtsaufnahmen-->Vorbau-->	2.0			
+Karosseriemechatronik		10.0		
+Klappen		2298.0		
+Klimaanlage			169.0	
+Klimakühler				9.0
+Kofferraum_Heckklappe		596.0		
+Kompressor				21.0
+Kotflügel			439.0	
+Kotflügelbank			213.0	
+Kraftstoffanlage		805.0		
+Kraftstoffleitungen			169.0	
+Kühlerlüftermodul			16.0	
+LWR				34.0
+Ladeluftkühler_LLK				14.0
+Lautsprecher			18.0	
+Leitungen				46.0
+Leitungssatz			75.0	
+Lenkgetriebe			134.0	
+Lenksäule			55.0	
+Lenkung		939.0		
+Luftfederkompr				28.0
+Längsträger vorn			8.0	
+Längsträger_vorn			120.0	
+Lüfter			2.0	
+M-Steuergerät_Halter			35.0	
+Masse_Anzahl_Ort			47.0	
+Motor		561.0		
+Motorkühlung			197.0	
+Motorlager			2.0	
+Motorraum		3421.0	1.0	
+Motorraum_8-12				13.0
+Niveausensoren			35.0	
+Oelleitungen			40.0	
+Parkassistent			2.0	
+Pedale etc			31.0	
+Querlenker				1.0
+Querlenker links				1.0
+Querlenker_links				6.0
+Querlenker_rechts				6.0
+Radhaus hinten			1.0	
+Radhaus_hinten			346.0	
+Radhaus_vorn			53.0	
+Radlager				2.0
+Radlaufblenden			4.0	
+Radlaufschalen			226.0	
+Rahmen			5.0	
+Rohre_Leitungen				119.0
+Schalldämpfer			11.0	
+Schaltgestänge			127.0	
+Scharnier				11.0
+Scheibenquerträger_vorn_Stirnwand			174.0	
+Scheinwerfer_Blinker			630.0	
+Schiebedach_Großdach			79.0	
+Schließkeil				2.0
+Schweller			378.0	
+Schwellerbeplankung		37.0		
+Schwenklager  Radträger			169.0	
+Schwenklager Radträger			4.0	
+Schwenklager_Radträger			41.0	
+Seitenteil			1471.0	
+Signalhörner				8.0
+Sitzschienen		19.0		
+Sonstige			63.0	
+Spannbänder				6.0
+Spoiler				128.0
+Stabilisator			939.0	
+Starter				18.0
+Starter/Generator			2.0	
+Steuergeräte		39.0		
+Steuergeräte sonstige			5.0	
+Stoßfänger			9.0	
+Stoßfänger hinten		3.0		
+Stoßfänger_hinten		191.0		
+Stoßfänger_vorn		57.0		
+Sättel			995.0	
+Säule A			8.0	
+Säule_A			611.0	
+Säule_B			279.0	
+Säule_C			4.0	
+Tank			479.0	
+Tankklappe			55.0	
+Thermomanagement-->-->-->	1.0			
+Traglenker,-gelenk				1.0
+Tunnelbrücke				2.0
+Tunnelquerträger			19.0	
+Tunnelstrebe			177.0	
+Türen		3246.0	1413.0	
+Türschlösser Bowdenzüge				2.0
+Türschlösser_Bowdenzüge				40.0
+Unterboden			9.0	
+VA		10761.0		
+VA links				3.0
+VA_links				1.0
+VA_rechts				5.0
+Verdeck			21.0	
+Vorbau		1342.0	2.0	
+Vorne				6.0
+Vorne Links			39.0	
+Vorne Rechts			12.0	
+Vorne_Links			352.0	284.0
+Vorne_Rechts			273.0	282.0
+Wasserkasten			271.0	
+Wasserkastenvorderwand			51.0	
+Wischeranlage			195.0	
+Wärmedämmung			2.0	
+Zierleiste_Scheibe_Säule_C				5.0
+Zierteile			266.0	
+Zündspulen_Starter_Generator			83.0	
+aussen				39.0
+cW-Verkleidung				9.0
+cW-Verkleidungen			218.0	
+hinten links				2.0
+innen				1.0
+links				16.0
+rechts				25.0
+Ölwanne			33.0	
+Übersicht		9.0		
+Übersichten ZSB			40.0	
+Übersichtsaufnahmen		1766.0		
