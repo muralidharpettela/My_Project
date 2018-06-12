@@ -1,6 +1,6 @@
 import os
-source1 = "C:\\Users\\pettm\\Desktop\\Richtige_Dataset\\Fahrwerk_Aggregate\\VA"
-dest11 = "C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Fahrwerk\\val\\\VA"
+source1 = "/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset/Karosserie/KR_Aufbau_Seitenteil"
+dest11 = "/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie/val/KR_Aufbau_Seitenteil"
 files = os.listdir(source1)
 import shutil
 import numpy as np

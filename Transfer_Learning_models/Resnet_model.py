@@ -30,17 +30,18 @@ data_transforms = {
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
 }
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
+
+#data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
+data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Sauber'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
 dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=10,
-                                             shuffle=True, num_workers=0)
+                                             shuffle=True, num_workers=8)
               for x in ['train', 'val']}
 dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
 class_names = image_datasets['train'].classes
-
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 ######################################################################
