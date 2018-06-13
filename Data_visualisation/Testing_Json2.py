@@ -1,3 +1,4 @@
+#To view labels from the Json files as a categories wise like category1, category2,......
 import os
 import os, json
 import pandas as pd

@@ -1,3 +1,5 @@
+#Appended paths to get the labels of the data and be able to create a datatable using google charts api
+#Example labels--See Piecharts folder--Table_data---> labels_path.html
 import gviz_api
 page_template = """
 <html>

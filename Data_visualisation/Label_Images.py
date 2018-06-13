@@ -3,7 +3,7 @@ Displays Images+Info from json (only x.json) in specified folder. Creates a new 
 x.json + the coordinates of a click event (=EOS Point). Shortcuts may vary on different systems.
 Use print(key) to identifie keycodes on your system
 '''
-
+#Giving categories to images like hard,medium,easy, not possible
 
 import cv2
 import os
