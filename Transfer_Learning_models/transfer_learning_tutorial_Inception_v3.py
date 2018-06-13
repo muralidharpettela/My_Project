@@ -89,7 +89,7 @@ data_transforms = {
 
 
 #data_dir = 'C:\\Users\\pettm\\Downloads\\hymenoptera_data\\hymenoptera_data'
-data_dir='C:\\Users\\pettm\\Downloads\\Cats_dogs_data'
+data_dir='/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}

@@ -32,7 +32,7 @@ data_transforms = {
 }
 
 #data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
-data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Sauber'
+data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -177,10 +177,10 @@ def visualize_model(model, num_images=6):
 # Finetuning the convnet
 # ----------------------
 
-
+dclasses=len(class_names)
 model_ft = models.resnet18(pretrained=True)
 num_ftrs = model_ft.fc.in_features
-model_ft.fc = nn.Linear(num_ftrs, 6)
+model_ft.fc = nn.Linear(num_ftrs,dclasses)
 
 model_ft = model_ft.to(device)
 
@@ -217,7 +217,7 @@ for param in model_conv.parameters():
 
 # Parameters of newly constructed modules have requires_grad=True by default
 num_ftrs = model_conv.fc.in_features
-model_conv.fc = nn.Linear(num_ftrs, 6)
+model_conv.fc = nn.Linear(num_ftrs, dclasses)
 
 model_conv = model_conv.to(device)
 
