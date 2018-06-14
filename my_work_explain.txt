@@ -3,3 +3,15 @@
 3.pie charts
 4.excel sheet (Our categories consideration)
 5.Data sorting
+
+
+
+
+
+
+
+
+
+
+
+https://medium.com/@dvelsner/deploying-a-simple-machine-learning-model-in-a-modern-web-application-flask-angular-docker-a657db075280

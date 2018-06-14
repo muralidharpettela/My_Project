@@ -32,7 +32,8 @@ data_transforms = {
 }
 
 #data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
-data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
+#data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
+data_dir='/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Fahrwerk'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -139,6 +140,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 
     # load best model weights
     model.load_state_dict(best_model_wts)
+    torch.save(model,'Fahrwerk_Aggregate_trained.pth.tar')
     return model
 
 

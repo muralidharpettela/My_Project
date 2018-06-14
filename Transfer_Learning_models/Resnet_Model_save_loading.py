@@ -29,6 +29,12 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
+    'test': transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
 }
 
 data_dir = '/home/dpw0002/Desktop/hymenoptera_data'
@@ -39,9 +45,17 @@ image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
 dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=10,
                                              shuffle=True, num_workers=8)
               for x in ['train', 'val']}
+
+imagenet_data = torchvision.datasets.ImageFolder('/home/dpw0002/Desktop/test',data_transforms['test'])
+data_loader = torch.utils.data.DataLoader(imagenet_data,
+                                          batch_size=4,
+                                          shuffle=True,
+                                          num_workers=4)
+
 dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
 class_names = image_datasets['train'].classes
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
 
 ######################################################################
@@ -136,17 +150,19 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
     print('Training complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
     print('Best val Acc: {:4f}'.format(best_acc))
-    with open(r"my_trainer_object.pkl", "wb") as output_file:
+    with open(r"weight.pkl", "wb") as output_file:
         pickle.dump(best_model_wts, output_file)
     # load best model weights
     model.load_state_dict(best_model_wts)
+    #torch.save(model.state_dict(), 'trained.pt')
+    torch.save(model,'mymodel.pth.tar')
+    #torch.save(model, 'filename.pt')
     return model
 
 
 ######################################################################
 # Visualizing the model predictions
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 def visualize_model(model, num_images=6):
     was_training = model.training
@@ -155,7 +171,7 @@ def visualize_model(model, num_images=6):
     fig = plt.figure(figsize=(16,8))
 
     with torch.no_grad():
-        for i, (inputs, labels) in enumerate(dataloaders['val']):
+        for i, (inputs, labels) in enumerate(data_loader):
             inputs = inputs.to(device)
             labels = labels.to(device)
             
@@ -185,9 +201,9 @@ def visualize_model(model, num_images=6):
 #     #image = image.unsqueeze(0)  #this is for VGG, may not be needed for ResNet
 #     return image.cuda()  #assumes that you're using GPU
 
-# image = image_loader(PATH TO IMAGE)
+# image = image_loader()
 
-# your_trained_net(image)
+
 # #######################################################################
 # def visualize_model(model, num_images=6):
 #     was_training = model.training
@@ -260,37 +276,37 @@ visualize_model(model_ft)
 # ----------------------------------
 
 
-model_conv = torchvision.models.resnet18(pretrained=True)
-for param in model_conv.parameters():
-    param.requires_grad = False
+# model_conv = torchvision.models.resnet18(pretrained=True)
+# for param in model_conv.parameters():
+#     param.requires_grad = False
 
-# Parameters of newly constructed modules have requires_grad=True by default
-num_ftrs = model_conv.fc.in_features
-model_conv.fc = nn.Linear(num_ftrs, dsetclasses)
+# # Parameters of newly constructed modules have requires_grad=True by default
+# num_ftrs = model_conv.fc.in_features
+# model_conv.fc = nn.Linear(num_ftrs, dsetclasses)
 
-model_conv = model_conv.to(device)
+# model_conv = model_conv.to(device)
 
-criterion = nn.CrossEntropyLoss()
+# criterion = nn.CrossEntropyLoss()
 
-# Observe that only parameters of final layer are being optimized as
-# opoosed to before.
-optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.001, momentum=0.9)
+# # Observe that only parameters of final layer are being optimized as
+# # opoosed to before.
+# optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.001, momentum=0.9)
 
-# Decay LR by a factor of 0.1 every 7 epochs
-exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
-
-
-######################################################################
-# Train and evaluate
+# # Decay LR by a factor of 0.1 every 7 epochs
+# exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
 
 
-model_conv = train_model(model_conv, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=25)
+# ######################################################################
+# # Train and evaluate
 
-######################################################################
-#
 
-visualize_model(model_conv)
+# model_conv = train_model(model_conv, criterion, optimizer_conv,
+#                          exp_lr_scheduler, num_epochs=25)
+
+# ######################################################################
+# #
+
+# visualize_model(model_conv)
 
 plt.ioff()
 plt.show()
