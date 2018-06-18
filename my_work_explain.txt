@@ -3,7 +3,8 @@
 3.pie charts
 4.excel sheet (Our categories consideration)
 5.Data sorting
-
+6.Individual test scripts
+7.Documentation-first chapter
 
 
 

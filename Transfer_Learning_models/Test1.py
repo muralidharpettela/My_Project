@@ -37,16 +37,17 @@ data_transforms = {
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
 }
-imagenet_data = torchvision.datasets.ImageFolder('/home/dpw0002/Desktop/test',data_transforms['test'])
-data_loader = torch.utils.data.DataLoader(imagenet_data,
-                                          batch_size=4,
-                                          shuffle=True,
-                                          num_workers=4)
+# imagenet_data = torchvision.datasets.ImageFolder('/home/dpw0002/Desktop/test2',data_transforms['test'])
+# data_loader = torch.utils.data.DataLoader(imagenet_data,
+#                                           batch_size=4,
+#                                           shuffle=True,
+#                                           num_workers=4)
                         
-class_names = imagenet_data.classes
+#class_names = imagenet_data.classes
+class_names = ( 'KM_Anbauteile','KM_Klappen_Frontklappen','KM_Klappen_Heckklappe','KM_Tueren','KM_Uebersichtsaufnahmen','KR_Anbauteile_Heckklappe','KR_Aufbau','KR_Aufbau_Heck','KR_Aufbau_Saeule_A','KR_Aufbau_Seitenteil')
 num_classes=len(class_names)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") 
-model=torch.load('Elektrik_trained.pth.tar')
+model=torch.load('Karosserie_trained.pth.tar')
 loader=transforms.Compose([
         transforms.Resize(224),
         transforms.CenterCrop(224),
@@ -74,7 +75,7 @@ def visualize_model(model, num_images=6):
     fig = plt.figure(figsize=(16,8))
 
     with torch.no_grad():
-            image = Image.open('/home/dpw0002/Desktop/DSCN6972.jpg')
+            image = Image.open('/home/dpw0002/Desktop/2_6_TW_IMG_0031.jpg')
             image = loader(image).float()
             image.unsqueeze_(0)
             #image = Variable(image, requires_grad=True)

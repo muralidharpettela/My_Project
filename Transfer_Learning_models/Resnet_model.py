@@ -33,7 +33,7 @@ data_transforms = {
 
 #data_dir = 'C:\\Users\\pettm\\Desktop\\Richtige_Dataset_Sauber'
 #data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
-data_dir='/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Fahrwerk'
+data_dir='/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Karosserie'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -75,7 +75,7 @@ imshow(out, title=[class_names[x] for x in classes])
 # Training the model
 
 
-def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
+def train_model(model, criterion, optimizer, scheduler, num_epochs=35):
     since = time.time()
 
     best_model_wts = copy.deepcopy(model.state_dict())
@@ -140,7 +140,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 
     # load best model weights
     model.load_state_dict(best_model_wts)
-    torch.save(model,'Fahrwerk_Aggregate_trained.pth.tar')
+    torch.save(model,'Karosserie_trained_35Epochs.pth.tar')
     return model
 
 
@@ -200,7 +200,7 @@ exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
 
 
 model_ft = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler,
-                       num_epochs=25)
+                       num_epochs=35)
 
 ######################################################################
 #
@@ -237,13 +237,13 @@ exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
 # Train and evaluate
 
 
-model_conv = train_model(model_conv, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=25)
+# model_conv = train_model(model_conv, criterion, optimizer_conv,
+#                          exp_lr_scheduler, num_epochs=25)
 
-######################################################################
-#
+# ######################################################################
+# #
 
-visualize_model(model_conv)
+# visualize_model(model_conv)
 
 plt.ioff()
 plt.show()
