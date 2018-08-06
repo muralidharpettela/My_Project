@@ -69,11 +69,7 @@ jscode_data.setCell(27, 0, "Elektrik");
 jscode_data.setCell(27, 1, 3793.0);
 
         var jscode_table = new google.visualization.PieChart(document.getElementById('piechart'));
-	var options = {
-                legend: { textStyle: { fontSize: 7  //size of the legend 
-                } }
-              }
-        jscode_table.draw(jscode_data,options);
+        jscode_table.draw(jscode_data);
       }
     </script>
   </head>

@@ -1,0 +1,127 @@
+                                                    Category_1  Category_2  \
+                                                           NaN     45702.0   
+-->-->-->                                              40660.0         NaN   
+ABS                                                        NaN         NaN   
+AKF-Behälter                                               NaN         NaN   
+Abdeckung LTR vorn                                         NaN         NaN   
+Abdeckungen                                                NaN         NaN   
+Abdeckungen_Blenden                                        NaN         NaN   
+Abgasanlage                                                NaN      2511.0   
+Abschirmbleche                                             NaN         NaN   
+Achslenker                                                 NaN         NaN   
+Aggregate / Fahrwerk-->-->-->                             88.0         NaN   
+Aggregate / Fahrwerk-->Abgasanlage-->Halter und...         1.0         NaN   
+Aggregate / Fahrwerk-->Abgasanlage-->Schalldämp...        11.0         NaN   
+Aggregate / Fahrwerk-->Anbauteile Motorraum-->-->         10.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->-->                   1.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->BKV-->               10.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->Bremsleitu...         7.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->Bremsschei...         4.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->ESC-Aggreg...         4.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->            10.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->H...         3.0         NaN   
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->V...         3.0         NaN   
+Aggregate / Fahrwerk-->Getriebe-->-->                     13.0         NaN   
+Aggregate / Fahrwerk-->Getriebe-->Getriebegehäu...        13.0         NaN   
+Aggregate / Fahrwerk-->Getriebe-->Getriebestütz...         2.0         NaN   
+Aggregate / Fahrwerk-->Getriebe-->Tunnelquerträ...        19.0         NaN   
+Aggregate / Fahrwerk-->HA-->-->                           23.0         NaN   
+Aggregate / Fahrwerk-->HA-->Achslenker-->                  5.0         NaN   
+Aggregate / Fahrwerk-->HA-->Anbauteile-->                  2.0         NaN   
+Aggregate / Fahrwerk-->HA-->Dämpfungssystem-->             2.0         NaN   
+...                                                        ...         ...   
+Unterboden                                                 NaN         NaN   
+VA                                                         NaN     10761.0   
+VA links                                                   NaN         NaN   
+VA_links                                                   NaN         NaN   
+VA_rechts                                                  NaN         NaN   
+Verdeck                                                    NaN         NaN   
+Vorbau                                                     NaN      1342.0   
+Vorne                                                      NaN         NaN   
+Vorne Links                                                NaN         NaN   
+Vorne Rechts                                               NaN         NaN   
+Vorne_Links                                                NaN         NaN   
+Vorne_Rechts                                               NaN         NaN   
+Wasserkasten                                               NaN         NaN   
+Wasserkastenvorderwand                                     NaN         NaN   
+Wischeranlage                                              NaN         NaN   
+Wärmedämmung                                               NaN         NaN   
+Zierleiste_Scheibe_Säule_C                                 NaN         NaN   
+Zierteile                                                  NaN         NaN   
+Zündspulen_Starter_Generator                               NaN         NaN   
+aussen                                                     NaN         NaN   
+cW-Verkleidung                                             NaN         NaN   
+cW-Verkleidungen                                           NaN         NaN   
+hinten links                                               NaN         NaN   
+innen                                                      NaN         NaN   
+links                                                      NaN         NaN   
+rechts                                                     NaN         NaN   
+Ölwanne                                                    NaN         NaN   
+Übersicht                                                  NaN         9.0   
+Übersichten ZSB                                            NaN         NaN   
+Übersichtsaufnahmen                                        NaN      1766.0   
+
+                                                    Category_3  Category_4  
+                                                       79743.0    101918.0  
+-->-->-->                                                  NaN         NaN  
+ABS                                                       15.0         NaN  
+AKF-Behälter                                               NaN         9.0  
+Abdeckung LTR vorn                                         NaN         1.0  
+Abdeckungen                                                NaN         7.0  
+Abdeckungen_Blenden                                        NaN         1.0  
+Abgasanlage                                                NaN         NaN  
+Abschirmbleche                                             1.0         NaN  
+Achslenker                                               710.0         NaN  
+Aggregate / Fahrwerk-->-->-->                              NaN         NaN  
+Aggregate / Fahrwerk-->Abgasanlage-->Halter und...         NaN         NaN  
+Aggregate / Fahrwerk-->Abgasanlage-->Schalldämp...         NaN         NaN  
+Aggregate / Fahrwerk-->Anbauteile Motorraum-->-->          NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->-->                   NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->BKV-->                NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->Bremsleitu...         NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->Bremsschei...         NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->ESC-Aggreg...         NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->             NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->H...         NaN         NaN  
+Aggregate / Fahrwerk-->Bremssystem-->Sättel-->V...         NaN         NaN  
+Aggregate / Fahrwerk-->Getriebe-->-->                      NaN         NaN  
+Aggregate / Fahrwerk-->Getriebe-->Getriebegehäu...         NaN         NaN  
+Aggregate / Fahrwerk-->Getriebe-->Getriebestütz...         NaN         NaN  
+Aggregate / Fahrwerk-->Getriebe-->Tunnelquerträ...         NaN         NaN  
+Aggregate / Fahrwerk-->HA-->-->                            NaN         NaN  
+Aggregate / Fahrwerk-->HA-->Achslenker-->                  NaN         NaN  
+Aggregate / Fahrwerk-->HA-->Anbauteile-->                  NaN         NaN  
+Aggregate / Fahrwerk-->HA-->Dämpfungssystem-->             NaN         NaN  
+...                                                        ...         ...  
+Unterboden                                                 9.0         NaN  
+VA                                                         NaN         NaN  
+VA links                                                   NaN         3.0  
+VA_links                                                   NaN         1.0  
+VA_rechts                                                  NaN         5.0  
+Verdeck                                                   21.0         NaN  
+Vorbau                                                     2.0         NaN  
+Vorne                                                      NaN         6.0  
+Vorne Links                                               39.0         NaN  
+Vorne Rechts                                              12.0         NaN  
+Vorne_Links                                              352.0       284.0  
+Vorne_Rechts                                             273.0       282.0  
+Wasserkasten                                             271.0         NaN  
+Wasserkastenvorderwand                                    51.0         NaN  
+Wischeranlage                                            195.0         NaN  
+Wärmedämmung                                               2.0         NaN  
+Zierleiste_Scheibe_Säule_C                                 NaN         5.0  
+Zierteile                                                266.0         NaN  
+Zündspulen_Starter_Generator                              83.0         NaN  
+aussen                                                     NaN        39.0  
+cW-Verkleidung                                             NaN         9.0  
+cW-Verkleidungen                                         218.0         NaN  
+hinten links                                               NaN         2.0  
+innen                                                      NaN         1.0  
+links                                                      NaN        16.0  
+rechts                                                     NaN        25.0  
+Ölwanne                                                   33.0         NaN  
+Übersicht                                                  NaN         NaN  
+Übersichten ZSB                                           40.0         NaN  
+Übersichtsaufnahmen                                        NaN         NaN  
+
+[674 rows x 4 columns]
