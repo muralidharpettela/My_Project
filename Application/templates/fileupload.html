@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red; border: 1px solid black;padding: 30px;}
+
+            </style>
+            </head>
+   <body>
+    
+    <h2>Bildbeschreibung in der Elektrik Kategorie</h2>
+        <p>Web Application.</p>
+        <p>Welcome to the Image classification Web application.Select an Image using Browse and click on submit and we get the result with uploaded image and label of image</p>
+      <form action = "http://127.0.0.1:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+      
+   </body>
+</html>
