@@ -56,7 +56,7 @@ data_transforms = {
 
 #data_dir = 'hymenoptera_data'
 #data_dir='C:\\Users\\pettm\\Downloads\\Cats_dogs_data'
-data_dir = 'C:\\Users\\pettm\\Downloads\\Only_cats_dogs'
+data_dir = '/media/dpw0002/740F759C1A78BC9F/Desktop_backup/Richtige_Dataset_Elektrik'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -215,7 +215,7 @@ def visualize_model(model, num_images=6):
 # Finetuning the convnet
 # ----------------------
 #
-# Load a pretrained model and reset final fully connected layer.
+
 #
 import torch.nn as nn
 import torch.nn.functional as F
@@ -234,7 +234,7 @@ class Net(nn.Module):
         self.conv5 = nn.Conv2d(64, 128, 5)
         self.fc1 = nn.Linear(128 * 3 * 3, 120)
         self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 2)
+        self.fc3 = nn.Linear(84, 6)
 
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
