@@ -31,26 +31,26 @@ data_transforms = {
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
     'test': transforms.Compose([
-        transforms.Resize(224),
-        transforms.CenterCrop(224),
+        transforms.Resize(299),
+        transforms.CenterCrop(299),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
 }
-# imagenet_data = torchvision.datasets.ImageFolder('/home/dpw0002/Desktop/test2',data_transforms['test'])
-# data_loader = torch.utils.data.DataLoader(imagenet_data,
-#                                           batch_size=4,
-#                                           shuffle=True,
-#                                           num_workers=4)
+testdata = torchvision.datasets.ImageFolder('/home/dpw0002/Desktop/test_data',data_transforms['test'])
+testloader = torch.utils.data.DataLoader(testdata,
+                                          batch_size=4,
+                                          shuffle=True,
+                                          num_workers=4)
                         
-#class_names = imagenet_data.classes
+class_names = testdata.classes
 class_names = ('Elektrik','Elektrik_FM_Wischeranlage','Elektrik_Frontend_Motoraum','Elektrik_Heckleuchten_Bremsleuchte','Elektrik_Kofferraum_Heckklappe','Elektrik_Scheinwerfer_Blinker')
 num_classes=len(class_names)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") 
-model=torch.load('Elektrik_trained.pth.tar')
+model=torch.load('Allcategories_Ince.pth.tar')
 loader=transforms.Compose([
-        transforms.Resize(224),
-        transforms.CenterCrop(224),
+        transforms.Resize(299),
+        transforms.CenterCrop(299),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
@@ -75,7 +75,7 @@ def visualize_model(model, num_images=6):
     fig = plt.figure(figsize=(16,8))
 
     with torch.no_grad():
-            image = Image.open('/home/dpw0002/Desktop/1_0_TW_IMG_0264.jpg')
+            image = Image.open('/home/dpw0002/Desktop/8_6_TW_IMG_4009.jpg')
             image = loader(image).float()
             image.unsqueeze_(0)
             #image = Variable(image, requires_grad=True)
@@ -102,6 +102,40 @@ def visualize_model(model, num_images=6):
     model.train(mode=was_training)
 
 visualize_model(model)
+#accuracy testing on each classes ''' Remember one point-When choosing the test dataset no.of images/4=remainder(0) or else it commits the index error.
+correct = 0
+total = 0
+with torch.no_grad():
+
+    for i, (inputs, labels) in enumerate(testloader):
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+
+        outputs = model(inputs)
+        _, preds = torch.max(outputs, 1)
+        total += labels.size(0)
+        correct += (preds == labels).sum().item()
+print('Accuracy of the network on the 10000 test images: %d %%' % (
+    100 * correct / total))
+
+class_correct = list(0. for i in range(25))
+class_total = list(0. for i in range(25))
+with torch.no_grad():
+    for i, (inputs, labels) in enumerate(testloader):
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+        outputs = model(inputs)
+        _, predicted = torch.max(outputs, 1)
+        c = (predicted == labels).squeeze()
+        for i in range(4):
+            label = labels[i]
+            class_correct[label] += c[i].item()
+            class_total[label] += 1
+
+
+for i in range(25):
+    print('Accuracy of %5s : %2d %%' % (
+        class_names[i], 100 * class_correct[i] / class_total[i]))
 
 plt.ioff()
 plt.show()
